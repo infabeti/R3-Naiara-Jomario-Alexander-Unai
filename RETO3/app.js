@@ -1,4 +1,4 @@
-const http = require('http');
+/* const http = require('http');
 const fs = require('fs');
 const index = require('./index.js');
 const puerto = 4500;
@@ -6,6 +6,8 @@ const puerto = 4500;
 const server = http.createServer(function(peticion, respuesta) {
 	respuesta.writeHead(200, { 'Content-Type': 'text/html'});
 	
+	
+
 	fs.readFile('index.html', function(error, datos){
 		if(error) {
 			respuesta.writeHead(404);
@@ -26,4 +28,20 @@ server.listen(puerto, function(error){
 		console.log('escuchando en: ' + puerto);
 		console.log(index.mensaje(1));
 	}
+}); */
+const express = require('express')
+const app = express();
+const path = require('path');
+const index = require('./public/index.js');
+const puerto = 4500;
+
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname + '//public//index.html'));
+});
+
+app.listen(4500, () => {
+  console.log('escuchando en: ' + puerto)
+  console.log(index.mensaje(1));
 });
