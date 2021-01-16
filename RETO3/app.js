@@ -41,7 +41,19 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '//public//index.html'));
 });
 
-app.listen(4500, () => {
+app.get('/bares', (req, res) => {
+  res.sendFile(path.join(__dirname + '//public//bares.html'));
+});
+
+app.get('/restaurantes', (req, res) => {
+  res.sendFile(path.join(__dirname + '//public//restaurantes.html'));
+});
+
+app.get('/cafeterias', (req, res) => {
+	res.sendFile(path.join(__dirname + '//public//cafeterias.html'));
+});
+
+app.listen(puerto, () => {
   console.log('escuchando en: ' + puerto)
   console.log(index.mensaje(1));
 });
