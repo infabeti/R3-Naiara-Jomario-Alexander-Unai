@@ -29,6 +29,7 @@ h1 {
   position: relative;
   text-decoration: none;
   border-radius: 5px;
+  cursor:pointer;
 }
 .menu li:hover {
   transition: all 0.3s;
