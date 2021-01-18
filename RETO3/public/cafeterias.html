@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title> Bares </title>
+<link rel="stylesheet" type="text/css" href="css/bares.css"> 
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
+<style>
+	body { margin: 0; padding: 0; }
+	#map {  width: 300px; height: 300px; }
+</style>
+</head>
+<body>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+    type="text/css"
+/>
+</head>
+
+<body>
+
+<header>
+
+<!-- Imagen para volver al Index -->
+
+<a href="index.html"><img class="logo" src="img/logo.png" width="145" height="145"> </img> </a>
+<a href="index.html"><img class="flecha" src="img/flechatras.png" width="145" height="145"> </img> </a>
+<h1> BARES </h1>
+
+
+
+</header> 
+<br><br>
+
+
+
+<!-- Primer bar  -->
+
+<div class="bar1">
+
+<div class="bar1info" width="300" height="200">
+	  
+<h2>GAZTELEKU BERRIA</h2>
+<br>
+
+<p>
+• Dirección : Oñatiko Unibertsitarearen Kalea, nº9
+48015 Bilbo, Bizkaia 
+</p>
+
+<p>
+• Teléfono : 618 40 85 80 <br><br><br>
+</p>
+
+<img src="img/bar1foto.png" width="300" height="200"> </img> 
+</div>
+
+<div id="map"></div>
+
+<script>
+	// TO MAKE THE MAP APPEAR YOU MUST
+	// ADD YOUR ACCESS TOKEN FROM
+	// https://account.mapbox.com
+	mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-2.962750, 43.280556],
+        zoom: 16
+    });
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-2.962750, 43.280556])
+        .addTo(map);
+
+    map.addControl(
+        new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl
+        })
+    );
+</script>
+
+
+</div>
+
+
+
+<br><br><br><br><br>
+
+
+<!-- Segundo bar  -->
+
+<div class="bar2">
+
+<div class="bar2info">
+	  
+<h2>BAR LAGUN TOKI</h2>
+<br>
+
+<p>
+• Dirección : Andaluzia Kalea, 3, 48015 Bilbo, Bizkaia 
+</p>
+
+<p>
+• Teléfono : 946 81 73 91 <br><br><br>
+</p>
+</div>
+
+<img src="img/bar2foto.jpg" width="300" height="200"> </img> 
+
+
+
+</div>
+<br><br><br><br><br>
+
+
+<!-- Tercer bar  -->
+
+<div class="bar3">
+
+<div class="bar3info">
+	  
+<h2>POLITENA</h2>
+<br>
+
+<p>
+• Dirección : Agirre Lehendakariaren Etorb., 157, 48015 Bilbo, Bizkaia 
+</p>
+
+<p>
+• Teléfono : 944 76 33 86 <br><br><br>
+</p>
+</div>
+
+<img src="img/bar3foto.jpg" width="300" height="200"> </img> 
+
+
+
+</div>
+<br><br><br><br><br>
+
+<!-- Cuarto bar  -->
+
+<div class="bar4">
+
+<div class="bar4info">
+	  
+<h2>BAR AVENIDA</h2>
+<br>
+
+<p>
+• Dirección : Agirre Lehendakariaren Etorb., 139, 48015 Bilbo, Bizkaia 
+</p>
+
+<p>
+• Teléfono : 944 76 23 64 <br><br><br>
+</p>
+</div>
+
+<img src="img/bar4foto.jpg" width="300" height="200"> </img> 
+
+
+
+</div>
+<br><br><br><br><br>
+
+
+<!-- Quinto bar  -->
+
+<div class="bar5">
+
+<div class="bar5info">
+	  
+<h2>URIA BAR</h2>
+<br>
+
+<p>
+• Dirección : Arturo Campión Kalea, 20, 48015 Bilbo, Bizkaia 
+</p>
+
+<p>
+• Teléfono : 944 75 90 84 <br><br><br>
+</p>
+</div>
+
+<img src="img/bar5foto.jpg" width="300" height="200"> </img> 
+
+
+
+</div>
+<br><br><br><br><br>
+
+
+<!-- Sexto bar  -->
+
+<div class="bar6">
+
+<div class="bar6info">
+	  
+<h2>BAR OSASUNA</h2>
+<br>
+
+<p>
+• Dirección : Agirre Lehendakariaren Etorb., 175, 48015 Bilbo, Bizkaia 
+</p>
+
+<p>
+• Teléfono : 944 74 29 46 <br><br><br>
+</p>
+</div>
+
+<img src="img/bar6foto.png" width="300" height="200"> </img> 
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
