@@ -39,7 +39,8 @@ function mensaje(num){
 	}
 }
 module.exports = {
-    mensaje: mensaje
+	mensaje: mensaje
+	
 };
 
 
@@ -47,7 +48,9 @@ module.exports = {
 /* MAPA */
 
 function crearMapa(){
- console.log("funcion crear mapa");
+ 	console.log("funcion crear mapa");
+	var long = $("#long").val();
+	console.log("logintud es: "+longit);
 	mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
 	var map = new mapboxgl.Map({
 		container: 'map',
@@ -65,9 +68,6 @@ function crearMapa(){
 			mapboxgl: mapboxgl
 		})
 	);
-
-
-
 
 }
 
