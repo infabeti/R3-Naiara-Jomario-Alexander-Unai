@@ -41,3 +41,33 @@ function mensaje(num){
 module.exports = {
     mensaje: mensaje
 };
+
+
+
+/* MAPA */
+
+function crearMapa(){
+ console.log("funcion crear mapa");
+	mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
+	var map = new mapboxgl.Map({
+		container: 'map',
+		style: 'mapbox://styles/mapbox/streets-v11',
+		center: [-2.962750, 43.280556],
+		zoom: 16
+	});
+	var marker = new mapboxgl.Marker()
+		.setLngLat([-2.962750, 43.280556])
+		.addTo(map);
+
+	map.addControl(
+		new MapboxGeocoder({
+			accessToken: mapboxgl.accessToken,
+			mapboxgl: mapboxgl
+		})
+	);
+
+
+
+
+}
+
