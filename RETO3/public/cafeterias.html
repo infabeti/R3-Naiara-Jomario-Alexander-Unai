@@ -1,226 +1,271 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-<meta charset="UTF-8">
-<title> Bares </title>
-<link rel="stylesheet" type="text/css" href="css/bares.css"> 
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
-<style>
-	body { margin: 0; padding: 0; }
-	#map {  width: 300px; height: 300px; }
-</style>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+  	<script type="text/javascript" src="index.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/cafeterias.css"> 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+    <title>Cafeterias</title>
+
 </head>
 <body>
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
-<link
-    rel="stylesheet"
-    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
-    type="text/css"
-/>
-</head>
 
-<body>
+<!-- Menu  -->
 
-<header>
-
-<!-- Imagen para volver al Index -->
-
-<a href="index.html"><img class="logo" src="img/logo.png" width="145" height="145"> </img> </a>
-<a href="index.html"><img class="flecha" src="img/flechatras.png" width="145" height="145"> </img> </a>
-<h1> BARES </h1>
-
-
-
-</header> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Hosteleria Elorrieta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"><img class="iconos" src="img/home.svg"></img>Home</a>
+          </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="bares.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true"><img class=" iconos" src="img/beer.svg"></img>
+              Bares
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="bares.html#bar1">Gazteleku Berria</a></li>
+              <li><a class="dropdown-item" href="bares.html#bar2">Bar Lagun Toki</a></li>
+              <li><a class="dropdown-item" href="bares.html#bar3"> Politena</a></li>
+              <li><a class="dropdown-item" href="bares.html#bar4"> Bar Avenida</a></li>
+              <li><a class="dropdown-item" href="bares.html#bar5"> Uria Bar</a></li>
+              <li><a class="dropdown-item" href="bares.html#bar6"> Bar Osasuna</a></li>
+            </ul>
+          </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="restaurantes.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="iconos" src="img/cutlery.svg"></img>
+              Restaurantes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="restaurantes.html#res1">Restaurante GOIKAR</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#res2"> SIDRERÍA - CERVECERA ANDER</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#res3"> San Ignacio Doner Kebab</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#res4"> Meson Los Pedros</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#res5">Taberna El Arenal</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#res6"> Restaurante Chino Ron City</a></li>
+            </ul>
+          </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="cafeterias.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="iconos" src="img/hot-cup.svg"></img>
+              Cafeterias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="cafeterias.html#caf1"> Portu eder</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#caf2"> ERMITA kafetegi</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#caf3"> Café-Bar "Presley"</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#caf4"> Panaderia Bertiz</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#caf5"> Txoko Berria</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#caf6">La Traviata</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
 <br><br>
 
 
+<main role="main">
 
-<!-- Primer bar  -->
+<div class="container marketing">
 
-<div class="bar1">
+        
 
-<div class="bar1info" width="300" height="200">
-	  
-<h2>GAZTELEKU BERRIA</h2>
-<br>
 
-<p>
-• Dirección : Oñatiko Unibertsitarearen Kalea, nº9
-48015 Bilbo, Bizkaia 
-</p>
+        <!-- RESTAURANTES -->
+		<!-- Restaurante 1 -->
 
-<p>
-• Teléfono : 618 40 85 80 <br><br><br>
-</p>
+        <hr class="featurette-divider"> <!-- linea horizontal divisora -->
 
-<img src="img/bar1foto.png" width="300" height="200"> </img> 
+        <div class="row featurette">
+		
+          <div class="col-md-7">
+            <h2 id="caf1" class="featurette-heading">PORTU EDER </h2> <br><br>
+            <p>
+				• <strong>Dirección : </strong>Calle Islas Canarias, 99, 48015 Bilbao, BI 
+			</p>
+
+			<p>
+				• <strong>Teléfono : </strong>946 52 26 58 
+			</p>
+			
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/caf1foto.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+		
+		<!-- Restaurante 2 -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 id="caf2" class="featurette-heading">ERMITA KAFETEGI</h2> <br><br>
+            <p>
+				• <strong>Dirección :</strong> Extremadura Kalea, 5, 48015 Bilbo, Bizkaia  
+			</p>
+
+			<p>
+				• <strong>Teléfono :</strong> 944 02 80 60 
+			</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/caf2foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+		
+		<!-- Restaurante 3 -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 id="caf3" class="featurette-heading">CAFÉ-BAR "PRESLEY"</h2> <br><br>
+            <p>
+				• <strong>Dirección :</strong> Agirre Lehendakariaren Etorb., 179, 48015 Bilbo, Bizkaia  
+			</p>
+
+			<p>
+				•<strong> Teléfono :</strong> 944 75 80 48 
+			</p>
+          </div>
+          <div class="col-md-5">
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/caf3foto.jpg" data-holder-rendered="true" >
+
+          </div>
+        </div>
+
+        
+		
+		<!-- Restaurante 4 -->
+		
+		<hr class="featurette-divider"> 
+		
+		<div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 id="caf4" class="featurette-heading">PANADERIA BERTIZ</h2> <br><br>
+            <p>
+				• <strong>Dirección : </strong>Agirre Lehendakariaren Etorb., 171, 48015 Bilbo, Bizkaia  
+			</p>
+
+			<p>
+				•<strong> Teléfono : </strong>944 75 80 06 
+			</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/caf4foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+		
+		
+		<!-- Restaurante 5 -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 id="caf5"class="featurette-heading">TXOKO BERRIA</h2> <br><br>
+            <p>
+				•<strong> Dirección : </strong>Agirre Lehendakariaren Etorb., 159, 48015 Bilbo, Bizkaia  
+			</p>
+
+			<p>
+				•<strong> Teléfono : </strong>944 00 42 99
+			</p>
+          </div>
+          <div class="col-md-5">
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/caf5foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+		
+		<!-- Restaurante 6 -->
+		
+		<hr class="featurette-divider"> 
+		
+		<div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 id="caf6" class="featurette-heading">LA TRAVIATA</h2> <br><br>
+            <p>
+				• <strong>Dirección : </strong>Catalunya Kalea, 1, 48015 Bilbo, Bizkaia  
+			</p>
+
+			<p>
+				• <strong>Teléfono : </strong>944 75 40 13 
+			</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/caf6foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+		
+
+        
+
+      </div>
+
+
+     
+    </main>
+
+
+
+<!-- FOOTER -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+      <small class="d-block mb-3 text-muted">© 2017-2018</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  <!-- </div> -->
 </div>
-
-<div id="map"></div>
-
-<script>
-	// TO MAKE THE MAP APPEAR YOU MUST
-	// ADD YOUR ACCESS TOKEN FROM
-	// https://account.mapbox.com
-	mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-2.962750, 43.280556],
-        zoom: 16
-    });
-    var marker = new mapboxgl.Marker()
-        .setLngLat([-2.962750, 43.280556])
-        .addTo(map);
-
-    map.addControl(
-        new MapboxGeocoder({
-            accessToken: mapboxgl.accessToken,
-            mapboxgl: mapboxgl
-        })
-    );
-</script>
-
-
-</div>
-
-
-
-<br><br><br><br><br>
-
-
-<!-- Segundo bar  -->
-
-<div class="bar2">
-
-<div class="bar2info">
-	  
-<h2>BAR LAGUN TOKI</h2>
-<br>
-
-<p>
-• Dirección : Andaluzia Kalea, 3, 48015 Bilbo, Bizkaia 
-</p>
-
-<p>
-• Teléfono : 946 81 73 91 <br><br><br>
-</p>
-</div>
-
-<img src="img/bar2foto.jpg" width="300" height="200"> </img> 
-
-
-
-</div>
-
-
-<br><br><br><br><br>
-
-
-<!-- Tercer bar  -->
-
-<div class="bar3">
-
-<div class="bar3info">
-	  
-<h2>POLITENA</h2>
-<br>
-
-<p>
-• Dirección : Agirre Lehendakariaren Etorb., 157, 48015 Bilbo, Bizkaia 
-</p>
-
-<p>
-• Teléfono : 944 76 33 86 <br><br><br>
-</p>
-</div>
-
-<img src="img/bar3foto.jpg" width="300" height="200"> </img> 
-
-
-
-</div>
-<br><br><br><br><br>
-
-<!-- Cuarto bar  -->
-
-<div class="bar4">
-
-<div class="bar4info">
-	  
-<h2>BAR AVENIDA</h2>
-<br>
-
-<p>
-• Dirección : Agirre Lehendakariaren Etorb., 139, 48015 Bilbo, Bizkaia 
-</p>
-
-<p>
-• Teléfono : 944 76 23 64 <br><br><br>
-</p>
-</div>
-
-<img src="img/bar4foto.jpg" width="300" height="200"> </img> 
-
-
-
-</div>
-<br><br><br><br><br>
-
-
-<!-- Quinto bar  -->
-
-<div class="bar5">
-
-<div class="bar5info">
-	  
-<h2>URIA BAR</h2>
-<br>
-
-<p>
-• Dirección : Arturo Campión Kalea, 20, 48015 Bilbo, Bizkaia 
-</p>
-
-<p>
-• Teléfono : 944 75 90 84 <br><br><br>
-</p>
-</div>
-
-<img src="img/bar5foto.jpg" width="300" height="200"> </img> 
-
-
-
-</div>
-<br><br><br><br><br>
-
-
-<!-- Sexto bar  -->
-
-<div class="bar6">
-
-<div class="bar6info">
-	  
-<h2>BAR OSASUNA</h2>
-<br>
-
-<p>
-• Dirección : Agirre Lehendakariaren Etorb., 175, 48015 Bilbo, Bizkaia 
-</p>
-
-<p>
-• Teléfono : 944 74 29 46 <br><br><br>
-</p>
-</div>
-
-<img src="img/bar6foto.png" width="300" height="200"> </img> 
-
-
-
-</div>
-
-
+</footer>
 
 
 
