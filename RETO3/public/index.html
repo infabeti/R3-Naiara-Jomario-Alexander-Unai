@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="img/logo.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-  	<script type="text/javascript" src="index.js"></script>
+  	<script type="text/javascript" src="js/index.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Hosteleria Elorrieta</title>
@@ -19,7 +19,7 @@
    <!-- <div class="container-fluid">  -->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Hosteleria Elorrieta</a>
+      <a class="navbar-brand" href="/"><img class="logo" src="img/logo.png"></img> Hosteleria Elorrieta</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,7 +37,7 @@
               <li><a class="dropdown-item" href="bares.html#bar2">Bar Lagun Toki</a></li>
               <li><a class="dropdown-item" href="bares.html#bar3"> Politena</a></li>
               <li><a class="dropdown-item" href="bares.html#bar4"> Bar Avenida</a></li>
-              <li><a class="dropdown-item" href="bares.html#bar5"> Uria Bar</a></li>
+              <li><a class="dropdown-item" href="bares#bar5"> Uria Bar</a></li>
               <li><a class="dropdown-item" href="bares.html#bar6"> Bar Osasuna</a></li>
             </ul>
           </li>
@@ -67,14 +67,6 @@
               <li><a class="dropdown-item" href="cafeterias.html#caf6">La Traviata</a></li>
             </ul>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#" class="link">Link</a>
-            <ul class="ulsubmenu">
-              <li class="submenu"><a class="nav-link" href="#">Links 123</a></li>
-              <li class="submenu"><a class="nav-link" href="#">Links 123</a></li>
-              <li class="submenu"><a class="nav-link" href="#">Links 123</a></li>
-            </ul>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -115,25 +107,25 @@
  <div class="card col-12 col-sm-6 col-md-4" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Bares</h5>
-    <img class="card-img-top" src="img/cardbar.jpg" alt="Card image cap">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="bares" class="btn btn-primary">Go somewhere</a>
+    <img class="card-img-top" src="img/cardbar.jpg" style="width: 400px; height: 260px;" alt="Card image cap">
+    <p class="card-text">Conozca a los mejores bares de la ciudad donde podrá celebrar con tus amigos.</p>
+    <a href="bares" class="btn btn-primary" style="width: 150px;">Bares</a>
   </div>
   </div>
   <div class="card col-12 col-sm-6 col-md-4" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Restaurantes</h5>
-      <img class="card-img-top" src="img/cardres.jpg" alt="Card image cap">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="restaurantes" class="btn btn-primary">Go somewhere</a>
+      <img class="card-img-top" src="img/cardres.jpg" style="width: 400px; height: 260px;" alt="Card image cap">
+      <p class="card-text">Una selección de los mejores restaurantes para disfrutar con los que amamos.</p>
+      <a href="restaurantes" class="btn btn-primary " style="width: 150px;">Restaurantes</a>
     </div>
   </div>
   <div class="card col-12 col-sm-6 col-md-4 " style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Cafeterias</h5>
-     <a href="cafeterias"><img class="card-img-top" src="img/cardcaf.jpg" alt="Card image cap"></a> 
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <!-- a href="#" class="btn btn-primary">Go somewhere</a> -->
+     <a href="cafeterias"><img class="card-img-top" style="width: 400px; height: 260px;" src="img/cardcaf.jpg" alt="Card image cap"></a> 
+      <p class="card-text">Los mejores cafés los puede encontrar en nuestras cafeterias.</p>
+      <a href="#" class="btn btn-primary" style="width: 150px;">Cafeterias</a>
     </div>
   </div>
 
@@ -145,7 +137,7 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-12 col-md">
-      <img class="mb-2" src="img/favicon.png" alt="" width="24" height="24">
+      <img class="mb-2 logo" src="img/logo.png" alt="">
       <small class="d-block mb-3 text-muted">© 2017-2018</small>
     </div>
     <div class="col-6 col-md">

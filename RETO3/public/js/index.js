@@ -49,25 +49,28 @@ module.exports = {
 
 function crearMapa(){
  	console.log("funcion crear mapa");
+	console.log("logintud es: ");
 	var long = $("#long").val();
 	console.log("logintud es: "+longit);
-	mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
-	var map = new mapboxgl.Map({
-		container: 'map',
-		style: 'mapbox://styles/mapbox/streets-v11',
-		center: [-2.962750, 43.280556],
-		zoom: 16
+	
+	$(this).slideDown( ()=>{
+		mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [-2.962750, 43.280556],
+			zoom: 16
+		});
+		var marker = new mapboxgl.Marker()
+			.setLngLat([-2.962750, 43.280556])
+			.addTo(map);
+
+		map.addControl(
+			new MapboxGeocoder({
+				accessToken: mapboxgl.accessToken,
+				mapboxgl: mapboxgl
+			})
+		);
 	});
-	var marker = new mapboxgl.Marker()
-		.setLngLat([-2.962750, 43.280556])
-		.addTo(map);
-
-	map.addControl(
-		new MapboxGeocoder({
-			accessToken: mapboxgl.accessToken,
-			mapboxgl: mapboxgl
-		})
-	);
-
 }
 

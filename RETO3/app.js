@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 const path = require('path');
-const index = require('./public/index.js');
+const index = require('./public/js/index.js');
 const puerto = 3000;
 
 app.use(express.static('public',{extensions:['html']}));
