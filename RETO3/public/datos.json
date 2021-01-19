@@ -1,0 +1,105 @@
+{
+    "bares":[
+        {
+            "nombre":"Gazteleku Berria",
+            "direccion": "Oñatiko Unibertsitarearen Kalea, nº9",
+            "CP": "48015",
+            "ciudad": "Bilbo",
+            "provincia":"Bizkaia",
+            "telefono": "618 40 85 80",
+            "lat": "43.280556",
+            "long": "-2.962750"
+        },{
+            "nombre":"Bar Lagun Toki",
+            "direccion":"Andaluzia Kalea, 3",
+            "CP": "48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia" ,
+            "telefono": "946 81 73 91",
+            "lat": "43.2828153",
+            "long": "-2.9644776"
+        },
+        {
+            "nombre": "Politena",
+            "direccion":"Agirre Lehendakariaren Etorb., 157",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 76 33 86",
+            "lat":"43.2785862",
+            "long":"-2.9615472"
+        },
+        {
+            "nombre":"Bar Avenida",
+            "direccion":"Agirre Lehendakariaren Etorb., 139",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 76 23 64",
+            "lat":"43.2764695",
+            "long":"-2.9607115"
+        },
+        {
+            "nombre":"Uria Bar",
+            "direccion":"Arturo Campión Kalea, 20",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 75 90 84",
+            "lat":"43.2824592",
+            "long":"-2.96252"
+        },
+        {
+            "nombre":"Bar Osasuna", 
+            "direccion":"Agirre Lehendakariaren Etorb., 175",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 74 29 46",
+            "lat":"43.2809817",
+            "long":"-2.962946"
+        }
+
+    ],
+    "restaurantes":[
+        {
+
+        },
+    ],
+    "cafeterias":[
+        {
+
+        }
+    ]
+
+}
+
+
+
+
+CAFÉS
+- Portu eder / Calle Islas Canarias, 99, 48015 Bilbao, BI / 946 52 26 58 / 43.2823994,-2.9658954
+
+- ERMITA kafetegi / Extremadura Kalea, 5, 48015 Bilbo, Bizkaia / 944 02 80 60 / 43.2815492,-2.9614024
+
+- Café-Bar "Presley" / Agirre Lehendakariaren Etorb., 179, 48015 Bilbo, Bizkaia / 944 75 80 48 / 43.2815562,-2.9631703
+
+- Panaderia Bertiz / Agirre Lehendakariaren Etorb., 171, 48015 Bilbo, Bizkaia / 944 75 80 06 / 43.2771753,-2.9608235
+
+- Txoko Berria / Agirre Lehendakariaren Etorb., 159, 48015 Bilbo, Bizkaia / 944 00 42 99 / 43.2789132,-2.9617888
+
+- La Traviata / Catalunya Kalea, 1, 48015 Bilbo, Bizkaia / 944 75 40 13 / 43.2832463,-2.9636049
+
+
+RESTAURANTES
+- Restaurante GOIKAR / Agirre Lehendakariaren Etorb., 186, 48015 Bilbo, Bizkaia / 685 75 12 61 / 43.2837082,-2.9660887
+
+- SIDRERÍA - CERVECERA ANDER / Andaluzia Kalea, 1, 48015 Bilbao, BI / 944 47 66 66 / 43.282819,-2.9649559
+
+- San Ignacio Doner Kebab / Navarro Villoslada Kalea, 6, 48015 Bilbo, Bizkaia / 697 40 38 93 / 43.276796,-2.961048
+
+- Meson Los Pedros / Extremadura Kalea, 1, 48015 Bilbo, Bizkaia / 944 02 50 57 / 43.2812938,-2.9611646
+
+- Taberna El Arenal / Celestino María del Arenal Plaza, 8, 48015 Bilbo, Bizkaia / 944 47 46 47 / 43.2757919,-2.9566591
+
+- Restaurante Chino Ron City / Calle Pintores Arrúe, 10, 48015 Bilbao, BI / 944 76 26 75 / 43.276108,-2.9583093

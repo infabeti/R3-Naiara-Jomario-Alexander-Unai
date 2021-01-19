@@ -38,10 +38,6 @@ function mensaje(num){
 		return 'corre cuanto puedas!!'
 	}
 }
-module.exports = {
-	mensaje: mensaje
-	
-};
 
 
 
@@ -49,14 +45,12 @@ module.exports = {
 
 function crearMapa(){
  	console.log("funcion crear mapa");
-	console.log("logintud es: ");
-	var long = $("#long").val();
-	console.log("logintud es: "+longit);
-	
-	$(this).slideDown( ()=>{
+	for(var i=0; i<3;i++){
+		console.log("logintud es: "+[i]);
 		mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
-		var map = new mapboxgl.Map({
-			container: 'map',
+			var map = map+i;
+			map = new mapboxgl.Map({
+			container: 'map'+i,
 			style: 'mapbox://styles/mapbox/streets-v11',
 			center: [-2.962750, 43.280556],
 			zoom: 16
@@ -71,6 +65,10 @@ function crearMapa(){
 				mapboxgl: mapboxgl
 			})
 		);
-	});
+	}
 }
 
+module.exports = {
+	mensaje: mensaje
+	
+};
