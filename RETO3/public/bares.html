@@ -9,22 +9,27 @@
     <!--mapa-->
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />   
-   
-    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-  	<script type="text/javascript" src="js/index.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="css/bares.css"> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- <script src="http://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+    
+    <link rel="stylesheet" type="text/css" href="css/bares.css"> 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<script type="text/javascript" src="js/funciones.js"></script>
+    
     <title>Bares</title>
+
     <style>
-      body { margin: 0; padding: 0; }
-      #map { position: relative; top: 0; bottom: 0; width: 300px; height: 300px; }
+      /* #mapa{display: inline;  position:absolute; margin: 0 auto;  top: 10px; bottom: 0; width: 300px; height: 300px; } */
     </style>
+
 </head>
 <body>
   <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
@@ -112,11 +117,14 @@
 
 			<p>
 				• Teléfono : 618 40 85 80 
-			</p>
-			
-      <a onclick="crearMapa()" class="btn btn-primary">Ver ubicacción</a>
+      </p><br>
+      <a onclick="abrirdialogo(-2.962750, 43.280556)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+      <a onclick="mostrarMenu()" class="btn btn-primary">Ver Menu</a>
+      <!-- <div id="mapa" > 
+     
+      </div>  -->
           </div>
-          <div id="map0" ></div>
+          <!-- <div id="map" ></div> -->
           <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar1foto.png" data-holder-rendered="true">
           </div>
@@ -135,9 +143,14 @@
 
 			<p>
 				• Teléfono : 946 81 73 91 
-			</p>
+      </p>
+      <a onclick="abrirdialogo(-2.9583093, 43.276108)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+      <a onclick="mostrarMenu()" class="btn btn-primary">Ver Menu</a>
+      <div id="mapa" > 
+     
+      </div> 
           </div>
-          <div id="map1"></div>
+          <div id="map"></div>
           <div class="col-md-5 order-md-1">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar2foto.jpg" data-holder-rendered="true" >
             
@@ -161,7 +174,7 @@
 				• Teléfono : 944 76 33 86 
 			</p>
           </div>
-          <div id="map2"></div>
+          <!-- <div id="map"></div> -->
           <div class="col-md-5">
 		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar3foto.jpg" data-holder-rendered="true" >
 
@@ -247,7 +260,7 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-12 col-md">
-      <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+      <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="logo" width="24" height="24">
       <small class="d-block mb-3 text-muted">© 2017-2018</small>
     </div>
     <div class="col-6 col-md">

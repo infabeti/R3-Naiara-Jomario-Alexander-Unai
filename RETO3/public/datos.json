@@ -9,7 +9,8 @@
             "telefono": "618 40 85 80",
             "lat": "43.280556",
             "long": "-2.962750"
-        },{
+        },
+        {
             "nombre":"Bar Lagun Toki",
             "direccion":"Andaluzia Kalea, 3",
             "CP": "48015",
@@ -59,47 +60,131 @@
             "lat":"43.2809817",
             "long":"-2.962946"
         }
-
+        
     ],
     "restaurantes":[
         {
-
+            "nombre":"Restaurante GOIKAR",
+            "direccion":"Agirre Lehendakariaren Etorb., 186",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"685 75 12 61",
+            "lat": "43.2837082",
+            "long":"-2.9660887"
         },
+        {
+            "nombre":"SIDRERÍA - CERVECERA ANDER",
+            "direccion":"Andaluzia Kalea, 1",
+            "CP":"48015",
+            "ciudad":"Bilbao",
+            "provincia":"BI",
+            "telefono":"944 47 66 66",
+            "lat":"43.282819",
+            "long":"-2.9649559"
+        },
+        {
+            "nombre":"San Ignacio Doner Kebab",
+            "direccion":"Navarro Villoslada Kalea, 6",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"697 40 38 93",
+            "lat":"43.276796",
+            "long":"-2.961048"
+        },
+        {
+            "nombre":"Meson Los Pedros",
+            "direccion":"Extremadura Kalea, 1",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 02 50 57",
+            "lat":"43.2812938",
+            "long":"-2.9611646"
+        },
+        {
+            "nombre":"Taberna El Arenal",
+            "direccion":"Celestino María del Arenal Plaza, 8",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 47 46 47",
+            "lat":"43.2757919",
+            "long":"-2.9566591"
+        },
+        {
+            "nombre":"Restaurante Chino Ron City",
+            "direccion":"Calle Pintores Arrúe, 10",
+            "CP":"48015",
+            "ciudad":"Bilbao",
+            "provincia":"BI",
+            "telefono":"944 76 26 75",
+            "lat":"43.276108",
+            "long":"-2.9583093"
+        }
     ],
     "cafeterias":[
         {
-
+            "nombre":"Portu eder",
+            "direccion":"Calle Islas Canarias, 99",
+            "CP":"48015",
+            "ciudad":"Bilbao",
+            "provincia":"BI",
+            "telefono":"946 52 26 58",
+            "lat":"43.2823994",
+            "long":"-2.9658954"
+        },
+        {
+            "nombre":"ERMITA kafetegi",
+            "direccion":"Extremadura Kalea, 5",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 02 80 60",
+            "lat":"43.2815492",
+            "long":"-2.9614024"
+        },
+        {
+            "nombre":"Café-Bar 'Presley'",
+            "direccion":"Agirre Lehendakariaren Etorb., 179",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 75 80 48",
+            "lat":"43.2815562",
+            "long":"-2.9631703"
+        },
+        {
+            "nombre":"Panaderia Bertiz",
+            "direccion":"Agirre Lehendakariaren Etorb., 171",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 75 80 06",
+            "lat":"43.2771753",
+            "long":"-2.9608235"
+        },
+        {
+            "nombre":"Txoko Berria",
+            "direccion":"Agirre Lehendakariaren Etorb., 159",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 00 42 99",
+            "lat":"43.2789132",
+            "long":"-2.9617888"
+        },
+        {
+            "nombre":"La Traviata",
+            "direccion": "Catalunya Kalea, 1",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 75 40 13",
+            "lat":"43.2832463",
+            "long":"-2.9636049"
         }
     ]
 
 }
-
-
-
-
-CAFÉS
-- Portu eder / Calle Islas Canarias, 99, 48015 Bilbao, BI / 946 52 26 58 / 43.2823994,-2.9658954
-
-- ERMITA kafetegi / Extremadura Kalea, 5, 48015 Bilbo, Bizkaia / 944 02 80 60 / 43.2815492,-2.9614024
-
-- Café-Bar "Presley" / Agirre Lehendakariaren Etorb., 179, 48015 Bilbo, Bizkaia / 944 75 80 48 / 43.2815562,-2.9631703
-
-- Panaderia Bertiz / Agirre Lehendakariaren Etorb., 171, 48015 Bilbo, Bizkaia / 944 75 80 06 / 43.2771753,-2.9608235
-
-- Txoko Berria / Agirre Lehendakariaren Etorb., 159, 48015 Bilbo, Bizkaia / 944 00 42 99 / 43.2789132,-2.9617888
-
-- La Traviata / Catalunya Kalea, 1, 48015 Bilbo, Bizkaia / 944 75 40 13 / 43.2832463,-2.9636049
-
-
-RESTAURANTES
-- Restaurante GOIKAR / Agirre Lehendakariaren Etorb., 186, 48015 Bilbo, Bizkaia / 685 75 12 61 / 43.2837082,-2.9660887
-
-- SIDRERÍA - CERVECERA ANDER / Andaluzia Kalea, 1, 48015 Bilbao, BI / 944 47 66 66 / 43.282819,-2.9649559
-
-- San Ignacio Doner Kebab / Navarro Villoslada Kalea, 6, 48015 Bilbo, Bizkaia / 697 40 38 93 / 43.276796,-2.961048
-
-- Meson Los Pedros / Extremadura Kalea, 1, 48015 Bilbo, Bizkaia / 944 02 50 57 / 43.2812938,-2.9611646
-
-- Taberna El Arenal / Celestino María del Arenal Plaza, 8, 48015 Bilbo, Bizkaia / 944 47 46 47 / 43.2757919,-2.9566591
-
-- Restaurante Chino Ron City / Calle Pintores Arrúe, 10, 48015 Bilbao, BI / 944 76 26 75 / 43.276108,-2.9583093
