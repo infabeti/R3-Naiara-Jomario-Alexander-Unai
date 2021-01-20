@@ -3,14 +3,14 @@ const app = express();
 const path = require('path');
 const puerto = 3000;
 let dataFile = require('./public/datos.json');
-console.log(dataFile);
+// console.log(dataFile);
 
 app.use(express.static('public',{extensions:['html']}));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '//public//index.html'),function(error){
     if(error){
-      res.status(404).send("<h2>error 404: No existe o no se encuentra el archivo index.html</h2>");
+      res.status(404).send("<h1>error 404: Archivo index.html no encontrado.</h1>");
     }
   });
 });

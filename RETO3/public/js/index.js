@@ -9,15 +9,15 @@ function inicio(){
 /////////////////////////////////
 }
 function mapa(){
-	$(".btn").click(function abrirDialogo(){
+	$(".boton").click(function abrirDialogo(){
 		id = $(this).attr("id");
 		buscarDatos(id);
 		
 		$('#mapa').dialog("open");
-		var divclicado = $(this).next("div").attr("id");
-		console.log(divclicado);
+		// var divclicado = $(this).next("div").attr("id");
+		// console.log(divclicado);
 		
-		
+		 
 
 });
 	
@@ -78,9 +78,9 @@ function crearMapa(lat, lng){
 
 function buscarDatos(id){
 		//primero coge de la función 'mapa' el 'id' del botón clickado digamos que fue el primer botón, así que id = 1
-		nombreSitio = $("h2#"+id+"").text(); //con ese 'id' coge el texto ("Restaurante GOIKAR") del 'h2' que tenga ese mismo 'id'. 
-		console.log(nombreSitio);
-	
+	nombreSitio = $("h2#"+id+"").text(); //con ese 'id' coge el texto ("Restaurante GOIKAR") del 'h2' que tenga ese mismo 'id'. 
+	console.log(nombreSitio);
+	$('#mapa').dialog({title:nombreSitio});
     $.getJSON('/datos.json', function getObjects(obj, key, val) { //aquí recoge los datos del json
 		var newObj = false; 
 		$.each(obj, function(){ //empieza buscando por cada obj (bares/restaurantes/cafeterias)
@@ -108,4 +108,10 @@ function buscarDatos(id){
 		return newObj;
 		
 	});
+}
+
+function mostrarMenu(div){
+
+	$('#menubar'+div).toggle("slow");
+
 }
