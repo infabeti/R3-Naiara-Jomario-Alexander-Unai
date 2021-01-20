@@ -8,9 +8,10 @@ function inicio()
 
 
 function abrirdialogo(lat,long){
-	$('#mapa').dialog("open");
-	var divclicado = $(this).next("div").attr("id");
+	var divclicado = $(this).attr("id");
+	console.log(this);
 	console.log(divclicado);
+	$('#mapa').dialog("open");
 	crearMapa(lat,long);
 
 }
@@ -18,8 +19,8 @@ function abrirdialogo(lat,long){
 function iniciarDialogo(){
 	
 	$('#mapa').dialog({ 
-		height:300,
-		width:300,
+		height:400,
+		width:400,
 		modal:true,
 		autoOpen:false,
 		buttons:{
