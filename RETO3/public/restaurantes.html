@@ -9,6 +9,13 @@
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
   	<script type="text/javascript" src="js/index.js"></script>
+    <!--mapa-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="css/restaurantes.css"> 
     <link rel="stylesheet" href="css/index.css">
@@ -104,7 +111,11 @@
 			<p>
 				• <strong>Teléfono : </strong>685 75 12 61 
 			</p>
-			
+			  <a onclick="abrirdialogo(-2.9660887, 43.2837082)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+			  <a onclick="mostrarMenu()" class="btn btn-primary">Ver Menu</a>
+			  <div id="mapa"> 
+			 
+			  </div>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res1foto.PNG" data-holder-rendered="true">
@@ -125,6 +136,8 @@
 			<p>
 				• <strong>Teléfono :</strong> 944 47 66 66 
 			</p>
+			  <a onclick="abrirdialogo(-2.9649559, 43.282819)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+			  <a onclick="mostrarMenu()" class="btn btn-primary">Ver Menu</a>			
           </div>
           <div class="col-md-5 order-md-1">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res2foto.png" data-holder-rendered="true" >
@@ -145,6 +158,8 @@
 			<p>
 				•<strong> Teléfono :</strong> 697 40 38 93 
 			</p>
+			  <a onclick="abrirdialogo(-2.961048, 43.276796)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+			  <a onclick="mostrarMenu()" class="btn btn-primary">Ver Menu</a>				
           </div>
           <div class="col-md-5">
 		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res3foto.jpg" data-holder-rendered="true" >
@@ -168,6 +183,8 @@
 			<p>
 				•<strong> Teléfono : </strong>944 02 50 57 
 			</p>
+			  <a onclick="abrirdialogo(-2.9611646, 43.2812938)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+			  <a onclick="mostrarMenu()" class="btn btn-primary">Ver Menu</a>				
           </div>
           <div class="col-md-5 order-md-1">
 		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res4foto.jpg" data-holder-rendered="true" >
@@ -189,6 +206,8 @@
 			<p>
 				•<strong> Teléfono : </strong>944 47 46 47
 			</p>
+			  <a onclick="abrirdialogo(-2.9566591, 43.2757919)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+			  <a onclick="mostrarMenu()" class="btn btn-primary">Ver Menu</a>				
           </div>
           <div class="col-md-5">
 		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res5foto.jpg" data-holder-rendered="true" >
@@ -209,6 +228,8 @@
 			<p>
 				• <strong>Teléfono : </strong>944 76 26 75 
 			</p>
+			  <a onclick="abrirdialogo(-2.9583093, 43.276108)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+			  <a onclick="mostrarMenu()" class="btn btn-primary">Ver Menu</a>				
           </div>
           <div class="col-md-5 order-md-1">
 		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res6foto.png" data-holder-rendered="true" >
@@ -231,7 +252,7 @@
   <div class="container-fluid">
   <div class="row">
     <div class="col-12 col-md">
-      <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="logo" width="24" height="24">
+      <img class="mb-2 logo" src="img/logo.png" alt="">
       <small class="d-block mb-3 text-muted">© 2017-2018</small>
     </div>
     <div class="col-6 col-md">
