@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -18,7 +19,6 @@
     <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/bares.css"> 
     <link rel="stylesheet" href="css/index.css">
@@ -112,7 +112,21 @@
             <a onclick="abrirdialogo(-2.962750, 43.280556)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
             <a onclick="mostrarMenu(1)" class="btn btn-primary">Ver Menu</a>
             <div id="mapa" style="width: 300px; height: 300px; display: block;"></div>
-           
+            <div id="menubar1" class="menu">
+              <h4>Menu del dia</h4>
+              <dt class="entrantes">Tapas</dt>
+                <dd>prato1</dd>
+                <dd>prato2</dd>
+                <dd>prato3</dd>
+              <dt class="principal">Bebidas</dt>  
+                <dd>prato1</dd>
+                <dd>prato2</dd>
+                <dd>prato3</dd>
+              <dt class="postres">Snacks</dt>  
+                <dd>prato1</dd>
+                <dd>prato2</dd>
+                <dd>prato3</dd>
+            </div>
            
           </div>
           <div class="col-md-5">
@@ -129,21 +143,27 @@
             <h2 class="featurette-heading">BAR LAGUN TOKI</h2> <br><br>
             <p>• Dirección : Andaluzia Kalea, 3, 48015 Bilbo, Bizkaia</p>
         		<p>• Teléfono : 946 81 73 91</p>
-        <a onclick="abrirdialogo(-2.9644776, 43.2828153)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
-        <a onclick="mostrarMenu(2)" class="btn btn-primary">Ver Menu</a>
-        <div id="menubar2" style="display: none;" >
-          <h4>Menu del dia</h4>
-          <ul>
-            <li>entrante</li>
-            <li>principal</li>
-            <li>postre</li>
-          </ul>
+            <a onclick="abrirdialogo(-2.9644776, 43.2828153)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
+            <a onclick="mostrarMenu(2)" class="btn btn-primary">Ver Menu</a>
+              <div id="menubar2" class="menu">
+                <h4>Menu del dia</h4>
+                <dt class="entrantes">Tapas</dt>
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
+                <dt class="principal">Bebidas</dt>  
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
+                <dt class="postres">Snacks</dt>  
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
+              </div>
         </div>
           </div>
-          <!-- <div id="map"></div> -->
           <div class="col-md-5 order-md-1">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar2foto.jpg" data-holder-rendered="true" >
-            
           </div>
 
 
@@ -161,13 +181,20 @@
            
             <a onclick="abrirdialogo(-2.9615472, 43.2785862)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
             <a onclick="mostrarMenu(3)" class="btn btn-primary">Ver Menu</a>
-            <div id="menubar3" style="display: none;" >
+            <div id="menubar3" class="menu">
               <h4>Menu del dia</h4>
-              <ul>
-                <li>entrante</li>
-                <li>principal</li>
-                <li>postre</li>
-              </ul>
+              <dt class="entrantes">Tapas</dt>
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
+                <dt class="principal">Bebidas</dt>  
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
+                <dt class="postres">Snacks</dt>  
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
             </div>
           </div>
           <div class="col-md-5">
@@ -188,13 +215,20 @@
       			<p>• Teléfono : 944 76 23 64</p>
             <a onclick="abrirdialogo(-2.9607115, 43.2764695)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
             <a onclick="mostrarMenu(4)" class="btn btn-primary">Ver Menu</a>			
-            <div id="menubar4" style="display: none;" >
+            <div id="menubar4" class="menu">
               <h4>Menu del dia</h4>
-              <ul>
-                <li>entrante</li>
-                <li>principal</li>
-                <li>postre</li>
-              </ul>
+              <dt class="entrantes">Tapas</dt>
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
+                <dt class="principal">Bebidas</dt>  
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
+                <dt class="postres">Snacks</dt>  
+                  <dd>prato1</dd>
+                  <dd>prato2</dd>
+                  <dd>prato3</dd>
             </div>
           </div>
           <div class="col-md-5 order-md-1">
@@ -214,7 +248,7 @@
       			<p>• Teléfono : 944 75 90 84</p>
             <a onclick="abrirdialogo(-2.96252, 43.2824592)" id="verUbicacion" class="btn btn-primary">Ver ubicacción</a> 
             <a onclick="mostrarMenu(5)" class="btn btn-primary">Ver Menu</a>
-            <div id="menubar5" style="display: none;" >
+            <div id="menubar5" class="menu" >
               <h4>Menu del dia</h4>
               <ul>
                 <li>entrante</li>
@@ -263,7 +297,7 @@
   </main>
 
 <!-- FOOTER -->
-<footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark">
+<footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark" style=" margin-bottom:0 !important">
   <div class="container-fluid">
   <div class="row">
     <div class="col-12 col-md">
