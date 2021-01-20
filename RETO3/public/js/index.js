@@ -1,24 +1,35 @@
+/* MAPA */
 
-$(function (){
-
+$(document).ready(inicio);
+function inicio(){	
 	iniciarDialogo();
-
-}); 
-
-function abrirdialogo(lat,long){
-	var divclicado = $(this).attr("id");
-	console.log(this);
-	console.log(divclicado);
-	$('#mapa').dialog("open");
-	crearMapa(lat,long);
-
+	
+	mapa();
+ 
+/////////////////////////////////
 }
+function mapa(){
+	$(".btn").click(function abrirDialogo(){
+		id = $(this).attr("id");
+		buscarDatos(id);
+		
+		$('#mapa').dialog("open");
+		var divclicado = $(this).next("div").attr("id");
+		console.log(divclicado);
+		
+		
+
+});
+	
+}
+
+
 
 function iniciarDialogo(){
 	
 	$('#mapa').dialog({ 
-		width:300,
 		height:300,
+		width:300,
 		modal:true,
 		autoOpen:false,
 		buttons:{
@@ -32,19 +43,26 @@ function iniciarDialogo(){
 
 
 
-function crearMapa(lat,long){
-		// console.log("logintud es: "+long);
-		// console.log("latitud es: "+lat);
 
+
+
+function crearMapa(lat, lng){
+	 // console.log("funcion crear mapa");
+	// for(var i=0; i<3;i++){
+		console.log("longitud es: "+lng);
+		console.log("latitud es: "+lat);
+
+		//$("#mapa").dialog();
 		mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
+			//  map = map+i;
 			var map = new mapboxgl.Map({
 			container: 'mapa',
 			style: 'mapbox://styles/mapbox/streets-v11',
-			center: [lat, long],
+			center: [lat, lng],
 			zoom: 16
 		});
 		var marker = new mapboxgl.Marker()
-			.setLngLat([lat, long])
+			.setLngLat([lat, lng])
 			.addTo(map);
 
 		// map.addControl(
@@ -55,57 +73,36 @@ function crearMapa(lat,long){
 		// );
 	// }
 }
- 
-function mostrarMenu(div){
+
 	
-	$('#menubar'+div).toggle("slow");
 
-}
+function buscarDatos(id){
 
-
-/* function botonBares(){
-
-}
-function botonCafes(){
-
-}
-function botonRestaurantes(){
-
-} */
-/* $(document).ready(function(){
-	function eleccionSitio(){
-		var id = $(this).attr("id");
-		var url = ""+id+".html";
-		$(this).attr("href", url);
+		nombreSitio = $("h2#"+id+"").text();
+		console.log(nombreSitio);
+	
+    $.getJSON('/datos.json', function getObjects(obj, key, val) {
+		var newObj = false; 
+		$.each(obj, function(){
+			var testObject = this; 
+			// alert(testObject);
+			$.each(testObject, function(k,v){
+				if (v.nombre == nombreSitio){
+				console.log(v.nombre + ": " +v.lat + ", " + v.lng);
+				
+				var latitud = v.lat;
+				console.log("Latitud: " +latitud);
+				var longitud = v.lng;
+				console.log("Longitud: " +longitud);
+				/////////////////
+				crearMapa(latitud, longitud);
+				}
+				if(val == v && k == key){
+					newObj = testObject;
+				}
+			});
+		});
+		return newObj;
 		
-/* 		document.getElementById(id).onclick = function () {
-        var url = ""+id+".html";
-		$(this).attr("href") = url;
-		window.location.href(url); 
-	}
-	
-	
-/* 	if (id == "bares"){
-		location.href = "bares.html";
-	}
-	else if (id == "cafeterias"){
-		location.href = "cafeterias.html";
-	}
-	else if(id == "restaurantes"){
-		location.href = "restaurantes.html";
-	} 
-}); 
-function mensaje(num){
-	if (num==1){
-		return 'hola, todo en orden'
-	}
-	else{
-		return 'corre cuanto puedas!!'
-	}
+	});
 }
-*/
-
-// module.exports = {
-// 	mensaje: mensaje
-	
-// };

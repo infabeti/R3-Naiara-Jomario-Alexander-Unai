@@ -7,8 +7,8 @@
             "ciudad": "Bilbo",
             "provincia":"Bizkaia",
             "telefono": "618 40 85 80",
-            "lat": "43.280556",
-            "long": "-2.962750"
+            "lng": "43.280556",
+            "lat": "-2.962750"
         },
         {
             "nombre":"Bar Lagun Toki",
@@ -17,8 +17,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia" ,
             "telefono": "946 81 73 91",
-            "lat": "43.2828153",
-            "long": "-2.9644776"
+            "lng": "43.2828153",
+            "lat": "-2.9644776"
         },
         {
             "nombre": "Politena",
@@ -27,8 +27,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 76 33 86",
-            "lat":"43.2785862",
-            "long":"-2.9615472"
+            "lng":"43.2785862",
+            "lat":"-2.9615472"
         },
         {
             "nombre":"Bar Avenida",
@@ -37,8 +37,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 76 23 64",
-            "lat":"43.2764695",
-            "long":"-2.9607115"
+            "lng":"43.2764695",
+            "lat":"-2.9607115"
         },
         {
             "nombre":"Uria Bar",
@@ -47,8 +47,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 75 90 84",
-            "lat":"43.2824592",
-            "long":"-2.96252"
+            "lng":"43.2824592",
+            "lat":"-2.96252"
         },
         {
             "nombre":"Bar Osasuna", 
@@ -57,8 +57,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 74 29 46",
-            "lat":"43.2809817",
-            "long":"-2.962946"
+            "lng":"43.2809817",
+            "lat":"-2.962946"
         }
         
     ],
@@ -70,8 +70,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"685 75 12 61",
-            "lat": "43.2837082",
-            "long":"-2.9660887"
+            "lng": "43.2837082",
+            "lat":"-2.9660887"
         },
         {
             "nombre":"SIDRERÍA - CERVECERA ANDER",
@@ -80,8 +80,8 @@
             "ciudad":"Bilbao",
             "provincia":"BI",
             "telefono":"944 47 66 66",
-            "lat":"43.282819",
-            "long":"-2.9649559"
+            "lng":"43.282819",
+            "lat":"-2.9649559"
         },
         {
             "nombre":"San Ignacio Doner Kebab",
@@ -90,8 +90,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"697 40 38 93",
-            "lat":"43.276796",
-            "long":"-2.961048"
+            "lng":"43.276796",
+            "lat":"-2.961048"
         },
         {
             "nombre":"Meson Los Pedros",
@@ -100,8 +100,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 02 50 57",
-            "lat":"43.2812938",
-            "long":"-2.9611646"
+            "lng":"43.2812938",
+            "lat":"-2.9611646"
         },
         {
             "nombre":"Taberna El Arenal",
@@ -110,8 +110,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 47 46 47",
-            "lat":"43.2757919",
-            "long":"-2.9566591"
+            "lng":"43.2757919",
+            "lat":"-2.9566591"
         },
         {
             "nombre":"Restaurante Chino Ron City",
@@ -120,8 +120,8 @@
             "ciudad":"Bilbao",
             "provincia":"BI",
             "telefono":"944 76 26 75",
-            "lat":"43.276108",
-            "long":"-2.9583093"
+            "lng":"43.276108",
+            "lat":"-2.9583093"
         }
     ],
     "cafeterias":[
@@ -132,8 +132,8 @@
             "ciudad":"Bilbao",
             "provincia":"BI",
             "telefono":"946 52 26 58",
-            "lat":"43.2823994",
-            "long":"-2.9658954"
+            "lng":"43.2823994",
+            "lat":"-2.9658954"
         },
         {
             "nombre":"ERMITA kafetegi",
@@ -142,8 +142,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 02 80 60",
-            "lat":"43.2815492",
-            "long":"-2.9614024"
+            "lng":"43.2815492",
+            "lat":"-2.9614024"
         },
         {
             "nombre":"Café-Bar 'Presley'",
@@ -152,8 +152,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 75 80 48",
-            "lat":"43.2815562",
-            "long":"-2.9631703"
+            "lng":"43.2815562",
+            "lat":"-2.9631703"
         },
         {
             "nombre":"Panaderia Bertiz",
@@ -162,8 +162,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 75 80 06",
-            "lat":"43.2771753",
-            "long":"-2.9608235"
+            "lng":"43.2771753",
+            "lat":"-2.9608235"
         },
         {
             "nombre":"Txoko Berria",
@@ -172,8 +172,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 00 42 99",
-            "lat":"43.2789132",
-            "long":"-2.9617888"
+            "lng":"43.2789132",
+            "lat":"-2.9617888"
         },
         {
             "nombre":"La Traviata",
@@ -182,8 +182,8 @@
             "ciudad":"Bilbo",
             "provincia":"Bizkaia",
             "telefono":"944 75 40 13",
-            "lat":"43.2832463",
-            "long":"-2.9636049"
+            "lng":"43.2832463",
+            "lat":"-2.9636049"
         }
     ]
 
