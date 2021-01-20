@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const puerto = 3000;
+let dataFile = require('./public/datos.json');
+console.log(dataFile);
 
 app.use(express.static('public',{extensions:['html']}));
 

@@ -1,11 +1,9 @@
-/* MAPA */
 
-$(document).ready(inicio);
-function inicio()
-{	
+$(function (){
+
 	iniciarDialogo();
-	}
 
+}); 
 
 function abrirdialogo(lat,long){
 	var divclicado = $(this).attr("id");
@@ -19,8 +17,8 @@ function abrirdialogo(lat,long){
 function iniciarDialogo(){
 	
 	$('#mapa').dialog({ 
-		height:400,
-		width:400,
+		width:300,
+		height:300,
 		modal:true,
 		autoOpen:false,
 		buttons:{
@@ -34,18 +32,11 @@ function iniciarDialogo(){
 
 
 
-
-
-
 function crearMapa(lat,long){
-	 // console.log("funcion crear mapa");
-	// for(var i=0; i<3;i++){
-		console.log("logintud es: "+long);
-		console.log("latitud es: "+lat);
+		// console.log("logintud es: "+long);
+		// console.log("latitud es: "+lat);
 
-		//$("#mapa").dialog();
 		mapboxgl.accessToken = 'pk.eyJ1Ijoiam9tYXJpb3NhbnRhbmEiLCJhIjoiY2trMmdhY2VkMTEyNDJvbWZvbjNuaTFlOSJ9.YBTLtabWU5_HNz1up7Ouwg';
-			//  map = map+i;
 			var map = new mapboxgl.Map({
 			container: 'mapa',
 			style: 'mapbox://styles/mapbox/streets-v11',
@@ -64,7 +55,12 @@ function crearMapa(lat,long){
 		// );
 	// }
 }
+ 
+function mostrarMenu(div){
+	
+	$('#menubar'+div).toggle("slow");
 
+}
 
 
 /* function botonBares(){
