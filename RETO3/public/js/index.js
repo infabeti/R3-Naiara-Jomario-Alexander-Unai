@@ -118,4 +118,5 @@ function mostrarMenu(div){
 
 module.exports = {
 	buscarDatos: buscarDatos
+	
 }
