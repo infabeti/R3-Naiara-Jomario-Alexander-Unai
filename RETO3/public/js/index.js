@@ -13,7 +13,7 @@ function mapa(){
 		id = $(this).attr("id");
 		buscarDatos(id);
 		
-		
+		$('#mapa').dialog("open");
 		// var divclicado = $(this).next("div").attr("id");
 		// console.log(divclicado);
 		
@@ -77,11 +77,10 @@ function crearMapa(lat, lng){
 	
 
 function buscarDatos(id){
-	//primero coge de la función 'mapa' el 'id' del botón clickado digamos que fue el primer botón, así que id = 1
+		//primero coge de la función 'mapa' el 'id' del botón clickado digamos que fue el primer botón, así que id = 1
 	nombreSitio = $("h2#"+id+"").text(); //con ese 'id' coge el texto ("Restaurante GOIKAR") del 'h2' que tenga ese mismo 'id'. 
 	console.log(nombreSitio);
-	nombresitio = 'hola'
-
+	$('#mapa').dialog({title:nombreSitio});
     $.getJSON('/datos.json', function getObjects(obj, key, val) { //aquí recoge los datos del json
 		var newObj = false; 
 		$.each(obj, function(){ //empieza buscando por cada obj (bares/restaurantes/cafeterias)
@@ -98,32 +97,25 @@ function buscarDatos(id){
 					console.log("Latitud: " +latitud);
 					var longitud = v.lng; //y la longitud
 					console.log("Longitud: " +longitud);
-					/////////////////
-					crearMapa(latitud, longitud);
-					$('#mapa').dialog("open"); //e iniciamos la función 'crearMapa' con esos dos valores.
-					$('#mapa').dialog({title:nombreSitio});
-					return true;	
-				
-				}else{
-					var mensaje = "No hay ningun sitio con este nombre"
-					console.log(mensaje);
-					return false;
+				/////////////////
+				crearMapa(latitud, longitud); //e iniciamos la función 'crearMapa' con esos dos valores.
 				}
-				// if(val == v && k == key){
-				// 	newObj = testObject;
-				// }
+				if(val == v && k == key){
+					newObj = testObject;
+				}
 			});
 		});
-		// return newObj;
+		return newObj;
 		
 	});
-}
-module.exports = {
-    buscarDatos:buscarDatos
 }
 
 function mostrarMenu(div){
 
 	$('#menubar'+div).toggle("slow");
 
+}
+
+module.exports = {
+	buscarDatos: buscarDatos
 }
