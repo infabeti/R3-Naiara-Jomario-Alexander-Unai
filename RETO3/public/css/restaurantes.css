@@ -2,6 +2,14 @@ body {
 	background-image: url(../img/fondo1.png);
 }
 
+body {
+	
+	font-family:NewYork;
+	
+}
+
+
+
 h1 {
 
 text-align: center;	
@@ -31,4 +39,11 @@ float: left;
 	
 	background-color: white;
 		
+}
+
+@font-face {
+	
+	font-family:NewYork;
+	src: url(letras/NewYork.otf);
+	
 }
