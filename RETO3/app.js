@@ -5,6 +5,7 @@ const puerto = 3000;
 
 app.use(express.static('public',{extensions:['html']}));
 
+// Error index
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '//public//index.html'),function(error){
     if(error){
@@ -12,6 +13,38 @@ app.get('/', (req, res) => {
     }
   });
 });
+// Error bares
+app.get('/bares', (req, res) => {
+  res.sendFile(path.join(__dirname + '//public//bares.html'),function(error){
+    if(error){
+      res.status(404).send('<h1>error 404: No existe o no se encuentra el archivo "bares.html"</h1>');
+    }
+
+  });
+  
+});
+// Error restaurantes
+app.get('/restaurantes', (req, res) => {
+	  res.sendFile(path.join(__dirname + '//public//restaurantes.html'),function(error){
+	    if(error){
+	      res.status(404).send('<h1>error 404: No existe o no se encuentra el archivo "restaurantes.html"</h1>');
+	    }
+
+	  });
+  
+});
+
+//Error cafeterias
+app.get('/cafeterias', (req, res) => {
+  res.sendFile(path.join(__dirname + '//public//cafeterias.html'),function(error){
+    if(error){
+      res.status(404).send('<h1>error 404: No existe o no se encuentra el archivo "cafeterias.html"</h1>');
+    }
+
+  });
+  
+});
+
 
 app.get('/bares', (req, res) => {
   res.sendFile(path.join(__dirname + '//public//bares.html'));
