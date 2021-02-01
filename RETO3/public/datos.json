@@ -1,0 +1,190 @@
+{
+    "bares":[
+        {
+            "nombre":"Gazteleku Berria",
+            "direccion": "Oñatiko Unibertsitarearen Kalea, nº9",
+            "CP": "48015",
+            "ciudad": "Bilbo",
+            "provincia":"Bizkaia",
+            "telefono": "618 40 85 80",
+            "lng": "43.280556",
+            "lat": "-2.962750"
+        },
+        {
+            "nombre":"Bar Lagun Toki",
+            "direccion":"Andaluzia Kalea, 3",
+            "CP": "48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia" ,
+            "telefono": "946 81 73 91",
+            "lng": "43.2828153",
+            "lat": "-2.9644776"
+        },
+        {
+            "nombre": "Politena",
+            "direccion":"Agirre Lehendakariaren Etorb., 157",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 76 33 86",
+            "lng":"43.2785862",
+            "lat":"-2.9615472"
+        },
+        {
+            "nombre":"Bar Avenida",
+            "direccion":"Agirre Lehendakariaren Etorb., 139",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 76 23 64",
+            "lng":"43.2764695",
+            "lat":"-2.9607115"
+        },
+        {
+            "nombre":"Uria Bar",
+            "direccion":"Arturo Campión Kalea, 20",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 75 90 84",
+            "lng":"43.2824592",
+            "lat":"-2.96252"
+        },
+        {
+            "nombre":"Bar Osasuna", 
+            "direccion":"Agirre Lehendakariaren Etorb., 175",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 74 29 46",
+            "lng":"43.2809817",
+            "lat":"-2.962946"
+        }
+        
+    ],
+    "restaurantes":[
+        {
+            "nombre":"Restaurante GOIKAR",
+            "direccion":"Agirre Lehendakariaren Etorb., 186",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"685 75 12 61",
+            "lng": "43.2837082",
+            "lat":"-2.9660887"
+        },
+        {
+            "nombre":"SIDRERÍA - CERVECERA ANDER",
+            "direccion":"Andaluzia Kalea, 1",
+            "CP":"48015",
+            "ciudad":"Bilbao",
+            "provincia":"BI",
+            "telefono":"944 47 66 66",
+            "lng":"43.282819",
+            "lat":"-2.9649559"
+        },
+        {
+            "nombre":"San Ignacio Doner Kebab",
+            "direccion":"Navarro Villoslada Kalea, 6",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"697 40 38 93",
+            "lng":"43.276796",
+            "lat":"-2.961048"
+        },
+        {
+            "nombre":"Meson Los Pedros",
+            "direccion":"Extremadura Kalea, 1",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 02 50 57",
+            "lng":"43.2812938",
+            "lat":"-2.9611646"
+        },
+        {
+            "nombre":"Taberna El Arenal",
+            "direccion":"Celestino María del Arenal Plaza, 8",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 47 46 47",
+            "lng":"43.2757919",
+            "lat":"-2.9566591"
+        },
+        {
+            "nombre":"Restaurante Chino Ron City",
+            "direccion":"Calle Pintores Arrúe, 10",
+            "CP":"48015",
+            "ciudad":"Bilbao",
+            "provincia":"BI",
+            "telefono":"944 76 26 75",
+            "lng":"43.276108",
+            "lat":"-2.9583093"
+        }
+    ],
+    "cafeterias":[
+        {
+            "nombre":"Portu eder",
+            "direccion":"Calle Islas Canarias, 99",
+            "CP":"48015",
+            "ciudad":"Bilbao",
+            "provincia":"BI",
+            "telefono":"946 52 26 58",
+            "lng":"43.2823994",
+            "lat":"-2.9658954"
+        },
+        {
+            "nombre":"ERMITA kafetegi",
+            "direccion":"Extremadura Kalea, 5",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 02 80 60",
+            "lng":"43.2815492",
+            "lat":"-2.9614024"
+        },
+        {
+            "nombre":"Café-Bar 'Presley'",
+            "direccion":"Agirre Lehendakariaren Etorb., 179",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 75 80 48",
+            "lng":"43.2815562",
+            "lat":"-2.9631703"
+        },
+        {
+            "nombre":"Panaderia Bertiz",
+            "direccion":"Agirre Lehendakariaren Etorb., 171",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 75 80 06",
+            "lng":"43.2771753",
+            "lat":"-2.9608235"
+        },
+        {
+            "nombre":"Txoko Berria",
+            "direccion":"Agirre Lehendakariaren Etorb., 159",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 00 42 99",
+            "lng":"43.2789132",
+            "lat":"-2.9617888"
+        },
+        {
+            "nombre":"La Traviata",
+            "direccion": "Catalunya Kalea, 1",
+            "CP":"48015",
+            "ciudad":"Bilbo",
+            "provincia":"Bizkaia",
+            "telefono":"944 75 40 13",
+            "lng":"43.2832463",
+            "lat":"-2.9636049"
+        }
+    ]
+
+}

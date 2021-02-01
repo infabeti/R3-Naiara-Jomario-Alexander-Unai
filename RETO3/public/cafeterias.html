@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+  	<script type="text/javascript" src="js/index.js"></script>
+    <!--mapa-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+	  <link rel="stylesheet" type="text/css" href="css/cafeterias.css"> 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+  <title>Cafeterias</title>
+
+</head>
+<body>
+
+<!-- Menu  -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img class="logo" src="img/logo.png"></img> Hosteleria Elorrieta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"><img class="iconos" src="img/home.svg"></img>Home</a>
+          </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="bares.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true"><img class=" iconos" src="img/beer.svg"></img>
+              Bares
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="bares.html#1">Gazteleku Berria</a></li>
+              <li><a class="dropdown-item" href="bares.html#2">Bar Lagun Toki</a></li>
+              <li><a class="dropdown-item" href="bares.html#3"> Politena</a></li>
+              <li><a class="dropdown-item" href="bares.html#4"> Bar Avenida</a></li>
+              <li><a class="dropdown-item" href="bares.html#5"> Uria Bar</a></li>
+              <li><a class="dropdown-item" href="bares.html#6"> Bar Osasuna</a></li>
+            </ul>
+          </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="restaurantes.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="iconos" src="img/cutlery.svg"></img>
+              Restaurantes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="restaurantes.html#1">Restaurante GOIKAR</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#2"> SIDRERÍA - CERVECERA ANDER</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#3"> San Ignacio Doner Kebab</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#4"> Meson Los Pedros</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#5">Taberna El Arenal</a></li>
+              <li><a class="dropdown-item" href="restaurantes.html#6"> Restaurante Chino Ron City</a></li>
+            </ul>
+          </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="cafeterias.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="iconos" src="img/hot-cup.svg"></img>
+              Cafeterias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="cafeterias.html#1"> Portu eder</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#2"> ERMITA kafetegi</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#3"> Café-Bar "Presley"</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#4"> Panaderia Bertiz</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#5"> Txoko Berria</a></li>
+              <li><a class="dropdown-item" href="cafeterias.html#6">La Traviata</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br>
+
+
+<main role="main">
+
+<div class="container marketing">
+        <!-- CAFETERIAS -->
+		<!-- Cafeteria 1 -->
+
+        <hr class="featurette-divider"> <!-- linea horizontal divisora -->
+
+        <div class="row featurette">
+		
+          <div class="col-md-7">
+            <h2 id="1" class="nombreSitio featurette-heading">Portu eder</h2> <br><br>
+            <p>• <strong>Dirección : </strong>Calle Islas Canarias, 99, 48015 Bilbao, BI</p>
+    			  <p>• <strong>Teléfono : </strong>946 52 26 58</p>
+            <a  id="1" class="btn btn-primary boton">Ver ubicacción</a>  
+            <a onclick="mostrarMenu(1)" class="btn btn-primary">Ver Menu</a>
+            <div id="mapa"></div>	
+            <div id="menubar1" class="menu">
+              <h4>Menu del dia</h4>
+              <dt class="entrantes">Coffee</dt>
+                <dd>Expresso</dd>
+                <dd>Ristretto</dd>
+                <dd>Cortado</dd>
+              <dt class="principal">Tea</dt>  
+                <dd>Té verde</dd>
+                <dd>Té negro</dd>
+                <dd>Té blanco</dd>
+              <dt class="postres">Cakes</dt>  
+                <dd>Cheesecake</dd>
+                <dd>Tiramisú</dd>
+                <dd>Tres leches</dd>
+            </div>		
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/cafeterias/caf1foto.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+		
+		<!-- Cafeteria 2 -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 id="2" class="nombreSitio featurette-heading">ERMITA kafetegi</h2> <br><br>
+            <p>• <strong>Dirección :</strong> Extremadura Kalea, 5, 48015 Bilbo, Bizkaia</p>
+      			<p>• <strong>Teléfono :</strong> 944 02 80 60</p>
+			      <a id="2" class="btn btn-primary boton">Ver ubicacción</a> 
+            <a onclick="mostrarMenu(2)" class="btn btn-primary">Ver Menu</a>
+            <div id="menubar2" class="menu">
+              <h4>Menu del dia</h4>
+              <dt class="entrantes">Coffee</dt>
+                <dd>Americano</dd>
+                <dd>Largo</dd>
+                <dd>Carajillo</dd>
+              <dt class="principal">Tea</dt>  
+                <dd>Té rojo</dd>
+                <dd>Té azul</dd>
+                <dd>Té de manzanilla</dd>
+              <dt class="postres">Cakes</dt>  
+                <dd>Tarta de santiago</dd>
+                <dd>Ópera</dd>
+                <dd>Tarta de oreo</dd>
+            </div>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/cafeterias/caf2foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+		
+		<!-- Cafeteria 3 -->
+
+      <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 id="3" class="nombreSitio featurette-heading">Café-Bar 'Presley'</h2> <br><br>
+            <p>• <strong>Dirección :</strong> Agirre Lehendakariaren Etorb., 179, 48015 Bilbo, Bizkaia</p>
+      			<p>•<strong> Teléfono :</strong> 944 75 80 48</p>
+			      <a id="3" class="btn btn-primary boton">Ver ubicacción</a> 
+			      <a onclick="mostrarMenu(3)" class="btn btn-primary">Ver Menu</a>			
+            <div id="menubar3" class="menu">
+              <h4>Menu del dia</h4>
+              <dt class="entrantes">Coffee</dt>
+                <dd>Café con leche</dd>
+                <dd>Café bombón</dd>
+                <dd>Capuchino</dd>
+              <dt class="principal">Tea</dt>  
+                <dd>Té de menta</dd>
+                <dd>Té de tila</dd>
+                <dd>Té de valeriana</dd>
+              <dt class="postres">Cakes</dt>  
+                <dd>Tarta de chocolate negro</dd>
+                <dd>Tarta de chocolate blanco</dd>
+                <dd>Tarta de tres chocolates</dd>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/cafeterias/caf3foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+
+        
+		
+		<!-- Cafeteria 4 -->
+		
+		<hr class="featurette-divider"> 
+		
+		    <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 id="4" class="nombreSitio featurette-heading">Panaderia Bertiz</h2> <br><br>
+            <p>• <strong>Dirección : </strong>Agirre Lehendakariaren Etorb., 171, 48015 Bilbo, Bizkaia</p>
+      			<p>•<strong> Teléfono : </strong>944 75 80 06 </p>
+			      <a id="4" class="btn btn-primary boton">Ver ubicacción</a> 
+			      <a onclick="mostrarMenu(4)" class="btn btn-primary">Ver Menu</a>			
+            <div id="menubar4" class="menu">
+              <h4>Menu del dia</h4>
+              <dt class="entrantes">Coffee</dt>
+                <dd>Mocca</dd>
+                <dd>Café irlandés</dd>
+                <dd>Frappé</dd>
+              <dt class="principal">Tea</dt>  
+                <dd>Té de anís</dd>
+                <dd>Té de romero</dd>
+                <dd>Té de boldo</dd>
+              <dt class="postres">Cakes</dt>  
+                <dd>Tarta de oreo</dd>
+                <dd>Tarta de mikado</dd>
+                <dd>Tarta de lacasitos</dd>
+            </div>
+          </div>
+          <div class="col-md-5 order-md-1">
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/cafeterias/caf4foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+		
+		
+		<!-- Cafeteria 5 -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 id="5"class="nombreSitio featurette-heading">Txoko Berria</h2> <br><br>
+            <p>•<strong> Dirección : </strong>Agirre Lehendakariaren Etorb., 159, 48015 Bilbo, Bizkaia</p>
+      			<p>•<strong> Teléfono : </strong>944 00 42 99</p>
+			      <a id="5" class="btn btn-primary boton">Ver ubicacción</a> 
+            <a onclick="mostrarMenu(5)" class="btn btn-primary">Ver Menu</a>	
+            <div id="menubar5" class="menu">
+              <h4>Menu del dia</h4>
+              <dt class="entrantes">Coffee</dt>
+                <dd>Azteca</dd>
+                <dd>Cortado</dd>
+                <dd>Largo</dd>
+              <dt class="principal">Tea</dt>  
+                <dd>Té de lavanda</dd>
+                <dd>Té de limón</dd>
+                <dd>Té de jamaica</dd>
+              <dt class="postres">Cakes</dt>  
+                <dd>Cheesecake</dd>
+                <dd>Tarta de café</dd>
+                <dd>Tarta de fresa</dd>
+            </div>	
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/cafeterias/caf5foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+		
+		<!-- Cafeteria 6 -->
+		
+		<hr class="featurette-divider"> 
+		
+		    <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 id="6" class="nombreSitio featurette-heading">La Traviata</h2> <br><br>
+            <p>• <strong>Dirección : </strong>Catalunya Kalea, 1, 48015 Bilbo, Bizkaia</p>
+      			<p>• <strong>Teléfono : </strong>944 75 40 13</p>
+			      <a id="6" class="btn btn-primary boton">Ver ubicacción</a> 
+			      <a onclick="mostrarMenu(6)" class="btn btn-primary">Ver Menu</a>			
+            <div id="menubar5" class="menu">
+              <h4>Menu del dia</h4>
+              <dt class="entrantes">Coffee</dt>
+                <dd>Capuchino</dd>
+                <dd>Con leche</dd>
+                <dd>Americano</dd>
+              <dt class="principal">Tea</dt>  
+                <dd>Té rojo</dd>
+                <dd>Manzanilla</dd>
+                <dd>Té negro</dd>
+              <dt class="postres">Cakes</dt>  
+                <dd>Tarta de queso</dd>
+                <dd>Tarta de frambuesa</dd>
+                <dd>Tarta de oreo</dd>
+            </div>
+          </div>
+          <div class="col-md-5 order-md-1">
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/cafeterias/caf6foto.jpg" data-holder-rendered="true" >
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+<!-- FOOTER -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark" style=" margin-bottom:0 !important">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="mb-2 logo" src="img/logo.png" alt="">
+      <small class="d-block mb-3 text-muted">© 2017-2018</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  <!-- </div> -->
+</div>
+</footer>
+
+
+
+
+</body>
+</html>

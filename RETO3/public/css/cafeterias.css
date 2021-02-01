@@ -1,0 +1,34 @@
+body {
+	background-image: url(../img/fondo1.png);
+}
+
+h1 {
+
+text-align: center;	
+font-size: 50px;
+	
+}
+
+h2 {
+
+
+	
+}
+
+
+.flechatras {
+	
+float: left;
+	
+}
+
+
+.logo{
+  width: 50px;
+}
+
+.marketing {
+	
+	background-color: white;
+		
+}
