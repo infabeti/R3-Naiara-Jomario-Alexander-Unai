@@ -91,7 +91,7 @@ function buscarDatos(id){
 function mostrarMenu(div){
 
 	$('#menubar'+div).toggle("slow");
-
+	menus();
 }
 function buscarIds(){
 		var numItems = $('.nombreBar').length;
@@ -109,6 +109,21 @@ function buscarIds(){
             }
         }
 }
-module.exports = {
-	buscarDatos: buscarDatos
-};
+// module.exports = {
+// 	buscarDatos: buscarDatos
+// };
+
+
+function menus(){
+	
+	
+	fetch('http://localhost:8080/menu',{
+		
+	}).then((response) => response.json())
+	.then(data =>{
+		for(var i=0; i<4; i++){
+			// console.log("aqui");
+			   $("#plato"+(i+1)).text(data.platos[i]);
+		}
+	});
+}

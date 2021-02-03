@@ -3,10 +3,13 @@ const app = express();
 const path = require('path');
 const puerto = 3000;
 
+// const config = require('./config');
+
 app.use(express.static(path.join(__dirname, "public"),{extensions:['html']}));
 
-// Error index
+
 app.get('/', (req, res) => {
+ 
   res.sendFile(path.join(__dirname + '//public//index.html'),function(error){
     if(error){
       res.status(404).send('<h1>error 404: Archivo "index.html" no encontrado.</h1>');
