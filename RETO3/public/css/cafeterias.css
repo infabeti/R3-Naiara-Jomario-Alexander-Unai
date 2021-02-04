@@ -9,10 +9,9 @@ font-size: 50px;
 	
 }
 
-h2 {
-
-
-	
+.featurette-image.img-fluid.mx-auto{
+	width: 500px;
+	height: 300px;
 }
 
 

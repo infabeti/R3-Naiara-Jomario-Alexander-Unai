@@ -8,9 +8,9 @@ function inicio(){
 /* MOSTRAR MENÚ */
 $('.botonMenu').click(function (){
 var divSitio=$(this).next().attr("id");
-	alert(divSitio);
+	// alert(divSitio);
 	 var url = ('http://localhost:8080/'+divSitio);
-	 console.log(url);
+	//  console.log(url);
 	$('#'+divSitio).toggle("slow");
 	fetch(url,{
 		
@@ -29,7 +29,7 @@ var divSitio=$(this).next().attr("id");
 }
 function mapa(){
 	$(".boton").click(function abrirDialogo(){
-		buscarIds();
+		//buscarIds();
 		id = $(this).attr("id");
 		buscarDatos(id);
 		
@@ -44,8 +44,8 @@ function mapa(){
 function iniciarDialogo(){
 	
 	$('#mapa').dialog({ 
-		height:300,
-		width:300,
+		height:400,
+		width:400,
 		modal:true,
 		autoOpen:false,
 		buttons:{
@@ -108,22 +108,22 @@ function buscarDatos(id){
 	});
 }
 
-function buscarIds(){
-		var numItems = $('.nombreBar').length;
-		var min = numItems;
-		var max = 0;
+// function buscarIds(){
+// 		var numItems = $('.nombreBar').length;
+// 		var min = numItems;
+// 		var max = 0;
 		
-		 for (var i = 0; i < numItems; i++) {
-			actualId = $('.nombreBar').eq(i).attr("id");
+// 		 for (var i = 0; i < numItems; i++) {
+// 			actualId = $('.nombreBar').eq(i).attr("id");
 			
-            if (actualId < min) {
-				min = actualId;
-            }
-			else if (actualId > max) {
-				max = actualId;
-            }
-        }
-}
+//             if (actualId < min) {
+// 				min = actualId;
+//             }
+// 			else if (actualId > max) {
+// 				max = actualId;
+//             }
+//         }
+// }
 // module.exports = {
 // 	buscarDatos: buscarDatos
 // };
