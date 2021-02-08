@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/logo.png"/>
@@ -15,9 +16,8 @@
     <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-    <!-- <script src="http://code.jquery.com/jquery-3.5.1.js"></script> -->
-    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/cafeterias.css"> 
@@ -110,27 +110,27 @@
             <p><strong>• Dirección : </strong>Oñatiko Unibertsitarearen Kalea, nº9 48015 Bilbo, Bizkaia</p>
       			<p><strong>• Teléfono : </strong>618 40 85 80</p><br>
             <a  id="1" class="btn btn-primary boton">Ver ubicacción</a> 
-            <a onclick="mostrarMenu(1)" class="btn btn-primary">Ver Menu</a>
+            <a class="btn btn-primary botonMenu">Ver Menu</a>
             <div id="mapa" style="width: 300px; height: 300px; display: block;"></div>
-            <div id="menubar1" class="menu">
+            <div id="bar1" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Tapas</dt>
-                <dd>Patatas bravas</dd>
-                <dd>Patatas fritas</dd>
-                <dd>Ensaladilla rusa</dd>
+                <dd id="primero1"></dd>
+                <dd id="primero2"></dd>
+                <dd id="primero3"></dd>
               <dt class="principal">Bebidas</dt>  
-                <dd>Agua</dd>
-                <dd>Cocacola</dd>
-                <dd>Sprite</dd>
+                <dd id="segundo1"></dd>
+                <dd id="segundo2"></dd>
+                <dd id="segundo3"></dd>
               <dt class="postres">Snacks</dt>  
-                <dd>Patatas</dd>
-                <dd>Doritos</dd>
-                <dd>Gusanitos</dd>
+                <dd id="tercero1"></dd>
+                <dd id="tercero2"></dd>
+                <dd id="tercero3"></dd>
             </div>
            
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar1foto.png" data-holder-rendered="true">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/bares/bar1foto.png" data-holder-rendered="true">
           </div>
         </div>
 		
@@ -144,25 +144,25 @@
             <p><strong>• Dirección :</strong> Andaluzia Kalea, 3, 48015 Bilbo, Bizkaia</p>
         		<p><strong>• Teléfono : </strong>946 81 73 91</p>
             <a id="2" class="btn btn-primary boton">Ver ubicacción</a> 
-            <a onclick="mostrarMenu(2)" class="btn btn-primary">Ver Menu</a>
-              <div id="menubar2" class="menu">
+            <a class="btn btn-primary botonMenu">Ver Menu</a>
+              <div id="bar2" class="menu">
                 <h4>Menu del dia</h4>
                 <dt class="entrantes">Tapas</dt>
-                  <dd>Rabas fritas</dd>
-                  <dd>Sepia a la plancha</dd>
-                  <dd>Champiñones al ajillo</dd>
+                  <dd id="primero1"></dd>
+                  <dd id="primero2"></dd>
+                  <dd id="primero3"></dd>
                 <dt class="principal">Bebidas</dt>  
-                  <dd>Fanta de naranja</dd>
-                  <dd>Fanta de limón</dd>
-                  <dd>Cocacola</dd>
+                  <dd id="segundo1"></dd>
+                  <dd id="segundo2"></dd>
+                  <dd id="segundo3"></dd>
                 <dt class="postres">Snacks</dt>  
-                  <dd>Kit-kat</dd>
-                  <dd>Doritos</dd>
-                  <dd>Oreos</dd>
+                  <dd id="tercero1"></dd>
+                  <dd id="tercero2"></dd>
+                  <dd id="tercero3"></dd>
               </div>
         </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar2foto.jpg" data-holder-rendered="true" >
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/bares/bar2foto.jpg" data-holder-rendered="true" >
           </div>
 
 
@@ -179,25 +179,25 @@
       			<p><strong>• Teléfono : </strong>944 76 33 86</p>
            
             <a id="3" class="btn btn-primary boton">Ver ubicacción</a> 
-            <a onclick="mostrarMenu(3)" class="btn btn-primary">Ver Menu</a>
-            <div id="menubar3" class="menu">
+            <a class="btn btn-primary botonMenu">Ver Menu</a>
+            <div id="bar3" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Tapas</dt>
-                  <dd>Patatas mansas</dd>
-                  <dd>Rodajitas de longaniza</dd>
-                  <dd>Callos de ternera</dd>
+                  <dd id="primero1"></dd>
+                  <dd id="primero2"></dd>
+                  <dd id="primero3"></dd>
                 <dt class="principal">Bebidas</dt>  
-                  <dd>7up</dd>
-                  <dd>Sprite</dd>
-                  <dd>Zumo de naranja</dd>
+                  <dd id="segundo1"></dd>
+                  <dd id="segundo2"></dd>
+                  <dd id="segundo3"></dd>
                 <dt class="postres">Snacks</dt>  
-                  <dd>Huesitos</dd>
-                  <dd>Kit-kat</dd>
-                  <dd>Gusanitos</dd>
+                  <dd id="tercero1"></dd>
+                  <dd id="tercero2"></dd>
+                  <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar3foto.jpg" data-holder-rendered="true" >
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/bares/bar3foto.jpg" data-holder-rendered="true" >
           </div>
         </div>
 
@@ -213,25 +213,25 @@
             <p><strong>• Dirección : </strong>Agirre Lehendakariaren Etorb., 139, 48015 Bilbo, Bizkaia</p>
       			<p><strong>• Teléfono : </strong>944 76 23 64</p>
             <a id="4" class="btn btn-primary boton">Ver ubicacción</a>  
-            <a onclick="mostrarMenu(4)" class="btn btn-primary">Ver Menu</a>			
-            <div id="menubar4" class="menu">
+            <a class="btn btn-primary botonMenu">Ver Menu</a>			
+            <div id="bar4" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Tapas</dt>
-                  <dd>Pan con tomate</dd>
-                  <dd>Gambas fritas</dd>
-                  <dd>Queso manchego</dd>
+                  <dd id="primero1"></dd>
+                  <dd id="primero2"></dd>
+                  <dd id="primero3"></dd>
                 <dt class="principal">Bebidas</dt>  
-                  <dd>Batido de chocolate</dd>
-                  <dd>Mosto</dd>
-                  <dd>Red bull</dd>
+                  <dd id="segundo1"></dd>
+                  <dd id="segundo2"></dd>
+                  <dd id="segundo3"></dd>
                 <dt class="postres">Snacks</dt>  
-                  <dd>Fantasmitas</dd>
-                  <dd>Cheetos</dd>
-                  <dd>Chocolate</dd>
+                  <dd id="tercero1"></dd>
+                  <dd id="tercero2"></dd>
+                  <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar4foto.jpg" data-holder-rendered="true" >
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/bares/bar4foto.jpg" data-holder-rendered="true" >
           </div>
         </div>
 		
@@ -246,25 +246,25 @@
             <p><strong>• Dirección : </strong>Arturo Campión Kalea, 20, 48015 Bilbo, Bizkaia</p>
       			<p><strong>• Teléfono : </strong>944 75 90 84</p>
             <a id="5" class="btn btn-primary boton">Ver ubicacción</a>  
-            <a onclick="mostrarMenu(5)" class="btn btn-primary">Ver Menu</a>
-            <div id="menubar5" class="menu">
+            <a class="btn btn-primary botonMenu">Ver Menu</a>
+            <div id="bar5" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Tapas</dt>
-                  <dd>Tapa de quesos</dd>
-                  <dd>Entremeses variados</dd>
-                  <dd>Boquerones en vinagre</dd>
+                  <dd id="primero1"></dd>
+                  <dd id="primero2"></dd>
+                  <dd id="primero3"></dd>
                 <dt class="principal">Bebidas</dt>  
-                  <dd>Cocacola</dd>
-                  <dd>Kas</dd>
-                  <dd>Fanta</dd>
+                  <dd id="segundo1"></dd>
+                  <dd id="segundo2"></dd>
+                  <dd id="segundo3"></dd>
                 <dt class="postres">Snacks</dt>  
-                  <dd>Patatas</dd>
-                  <dd>Doritos</dd>
-                  <dd>Papadeltas</dd>
+                  <dd id="tercero1"></dd>
+                  <dd id="tercero2"></dd>
+                  <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar5foto.jpg" data-holder-rendered="true" >
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/bares/bar5foto.jpg" data-holder-rendered="true" >
           </div>
         </div>
 		
@@ -278,28 +278,28 @@
             <p><strong>• Dirección : </strong> Agirre Lehendakariaren Etorb., 175, 48015 Bilbo, Bizkaia</p>
     			  <p><strong>	• Teléfono :</strong> 944 74 29 46</p>
             <a id="6" class="btn btn-primary boton">Ver ubicacción</a> 
-            <a onclick="mostrarMenu(6)" class="btn btn-primary">Ver Menu</a>
-            <div id="menubar6" class="menu">
+            <a class="btn btn-primary botonMenu">Ver Menu</a>
+            <div id="bar6" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Tapas</dt>
-                  <dd>Ensaladilla rusa</dd>
-                  <dd>Calamares a la Andaluza</dd>
-                  <dd>Rabas fritas</dd>
+                  <dd id="primero1"></dd>
+                  <dd id="primero2"></dd>
+                  <dd id="primero3"></dd>
                 <dt class="principal">Bebidas</dt>  
-                  <dd>Zumos</dd>
-                  <dd>Agua</dd>
-                  <dd>Refrescos</dd>
+                  <dd id="segundo1"></dd>
+                  <dd id="segundo2"></dd>
+                  <dd id="segundo3"></dd>
                 <dt class="postres">Snacks</dt>  
-                  <dd>Gusanitos</dd>
-                  <dd>Takis</dd>
-                  <dd>Kit-kat</dd>
+                  <dd id="tercero1"></dd>
+                  <dd id="tercero2"></dd>
+                  <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/bares/bar6foto.png" data-holder-rendered="true" >
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/bares/bar6foto.png" data-holder-rendered="true" >
           </div>
     </div>
-		
+    <hr class="featurette-divider"> 
 
         <!-- BARES -->
         
@@ -310,42 +310,22 @@
   </main>
 
 <!-- FOOTER -->
-<footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark" style=" margin-bottom:0 !important">
+<footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark " style=" margin-bottom:0 !important">
   <div class="container-fluid">
   <div class="row">
-    <div class="col-12 col-md">
+    <div class="col-6 col-md">
       <img class="mb-2 logo" src="img/logo.png" alt="">
-      <small class="d-block mb-3 text-muted">© 2017-2018</small>
+      <small class="d-block mb-3 text-muted">© 2020-2021</small>
     </div>
-    <div class="col-6 col-md">
-      <h5>Features</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Cool stuff</a></li>
-        <li><a class="text-muted" href="#">Random feature</a></li>
-        <li><a class="text-muted" href="#">Team feature</a></li>
-        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-        <li><a class="text-muted" href="#">Another one</a></li>
-        <li><a class="text-muted" href="#">Last time</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Resource</a></li>
-        <li><a class="text-muted" href="#">Resource name</a></li>
-        <li><a class="text-muted" href="#">Another resource</a></li>
-        <li><a class="text-muted" href="#">Final resource</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>About</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Team</a></li>
-        <li><a class="text-muted" href="#">Locations</a></li>
-        <li><a class="text-muted" href="#">Privacy</a></li>
-        <li><a class="text-muted" href="#">Terms</a></li>
-      </ul>
-    </div>
+  
+    <div class="col-6 col-md-6">
+      <ul class="social-network social-circle">
+          <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-youtube"></i></a></li>  
+      </ul>				
+</div>
   <!-- </div> -->
 </div>
 </footer>

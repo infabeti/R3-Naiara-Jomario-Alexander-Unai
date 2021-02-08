@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/logo.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -92,8 +94,8 @@
         <!-- RESTAURANTES -->
 		<!-- Restaurante 1 -->
 
-        <hr class="featurette-divider"> <!-- linea horizontal divisora -->
-
+        <hr class="featurette-divider"> <!-- linea horizontal divisora-->
+ 
         <div class="row featurette">
 		
           <div class="col-md-7">
@@ -101,26 +103,26 @@
             <p>• <strong>Dirección : </strong>Agirre Lehendakariaren Etorb., 186, 48015 Bilbo, Bizkaia</p>
             <p>• <strong>Teléfono : </strong>685 75 12 61</p>
             <a  id="1" class="btn btn-primary boton">Ver ubicacción</a>  
-            <a onclick="mostrarMenu(1)" class="btn btn-primary">Ver Menu</a>
+            <a class="btn btn-primary botonMenu">Ver Menu</a>
             <div id="mapa" style="width: 400px; height: 400px;" ></div>
-            <div id="menubar1" class="menu">
+            <div id="restaurante1" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Entrantes</dt>
-                <dd>Jamón serrano</dd>
-                <dd>Espárragos blancos</dd>
-                <dd>Morcilla de Briones</dd>
+                <dd id="primero1"></dd>
+                <dd id="primero2"></dd>
+                <dd id="primero3"></dd>
               <dt class="principal">Principal</dt>  
-                <dd>Puré de calabacín</dd>
-                <dd>Lasaña de carne</dd>
-                <dd>Menestra de verduras</dd>
+                <dd id="segundo1"></dd>
+                <dd id="segundo2"></dd>
+                <dd id="segundo3"></dd>
               <dt class="postres">Postres</dt>  
-                <dd>Copa de chocolate blanco</dd>
-                <dd>Postre de músico</dd>
-                <dd>Brownie con helado</dd>
+                <dd id="tercero1"></dd>
+                <dd id="tercero2"></dd>
+                <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res1foto.PNG" data-holder-rendered="true">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/restaurantes/res1foto.PNG" data-holder-rendered="true">
           </div>
         </div>
 		
@@ -131,28 +133,28 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 id="2" class="nombreSitio featurette-heading">SIDRERÍA - CERVECERA ANDER</h2> <br><br>
-            <p>• <strong>Dirección :</strong> Andaluzia Kalea, 1, 48015 Bilbao, BI</p>
+            <p>• <strong>Dirección :</strong> Andaluzia Kalea, 1, 48015 Bilbao, Bizkaia</p>
       			<p>• <strong>Teléfono :</strong> 944 47 66 66</p>
 			      <a id="2" class="btn btn-primary boton">Ver ubicacción</a> 
-			      <a onclick="mostrarMenu(2)" class="btn btn-primary">Ver Menu</a>			
-            <div id="menubar2" class="menu" >
+			      <a class="btn btn-primary botonMenu">Ver Menu</a>			
+            <div id="restaurante2" class="menu" >
               <h4>Menu del dia</h4>
               <dt class="entrantes">Entrantes</dt>
-                <dd>Chorizo de Briones</dd>
-                <dd>Pimientos del piquillo con anchoa</dd>
-                <dd>Revuelto de setas con gamba</dd>
+                <dd id="primero1"></dd>
+                <dd id="primero2"></dd>
+                <dd id="primero3"></dd>
               <dt class="principal">Principal</dt>  
-                <dd>Fideuá con sepia y gambas</dd>
-                <dd>Potaje de alubias </dd>
-                <dd>Ensalada de muslitos de codornices</dd>
+                <dd id="segundo1"></dd>
+                <dd id="segundo2"></dd>
+                <dd id="segundo3"></dd>
               <dt class="postres">Postres</dt>  
-                <dd>Sopa de fresas</dd>
-                <dd>Helado crocanti</dd>
-                <dd>Helado de tiramisú</dd>
+                <dd id="tercero1"></dd>
+                <dd id="tercero2"></dd>
+                <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res2foto.png" data-holder-rendered="true" >
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/restaurantes/res2foto.png" data-holder-rendered="true" >
           </div>
         </div>
 		
@@ -166,25 +168,25 @@
             <p>• <strong>Dirección :</strong> Navarro Villoslada Kalea, 6, 48015 Bilbo, Bizkaia</p>
 			      <p>•<strong> Teléfono :</strong> 697 40 38 93</p>
 			      <a id="3" class="btn btn-primary boton">Ver ubicacción</a> 
-			      <a onclick="mostrarMenu(3)" class="btn btn-primary">Ver Menu</a>				
-            <div id="menubar3" class="menu" >
+			      <a class="btn btn-primary botonMenu">Ver Menu</a>				
+            <div id="restaurante3" class="menu" >
               <h4>Menu del dia</h4>
               <dt class="entrantes">Entrantes</dt>
-                <dd>Gambas al ajillo</dd>
-                <dd>Picadillo</dd>
-                <dd>Paté de hongos con mermelada</dd>
+                <dd id="primero1"></dd>
+                <dd id="primero2"></dd>
+                <dd id="primero3"></dd>
               <dt class="principal">Principal</dt>  
-                <dd>Tabulé de quinoa con croquetas</dd>
-                <dd>Rulo de hojaldre con verduras</dd>
-                <dd>Alcachofas rellenas de bacalao</dd>
+                <dd id="segundo1"></dd>
+                <dd id="segundo2"></dd>
+                <dd id="segundo3"></dd>
               <dt class="postres">Postres</dt>  
-                <dd>Macedonia de frutas</dd>
-                <dd>Tarta helada al whisky</dd>
-                <dd>Flan de queso</dd>
+                <dd id="tercero1"></dd>
+                <dd id="tercero2"></dd>
+                <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res3foto.jpg" data-holder-rendered="true" >
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"  src="img/restaurantes/res3foto.jpg" data-holder-rendered="true" >
           </div>
         </div>
 
@@ -200,25 +202,25 @@
             <p>• <strong>Dirección : </strong>Extremadura Kalea, 1, 48015 Bilbo, Bizkaia</p>
       			<p>•<strong> Teléfono : </strong>944 02 50 57 </p>
 			      <a id="4" class="btn btn-primary boton">Ver ubicacción</a> 
-			      <a onclick="mostrarMenu(4)" class="btn btn-primary">Ver Menu</a>				
-            <div id="menubar4" class="menu">
+			      <a class="btn btn-primary botonMenu">Ver Menu</a>				
+            <div id="restaurante4" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Entrantes</dt>
-                <dd>Mousse de oca con mermelada</dd>
-                <dd>Lomo ibérico de bellota</dd>
-                <dd>Surtido de fritos</dd>
+                <dd id="primero1"></dd>
+                <dd id="primero2"></dd>
+                <dd id="primero3"></dd>
               <dt class="principal">Principal</dt>  
-                <dd>Huevos estrellados con patatas</dd>
-                <dd>Pasta del día</dd>
-                <dd>Salmorejo con huevo, jamón y picos</dd>
+                <dd id="segundo1"></dd>
+                <dd id="segundo2"></dd>
+                <dd id="segundo3"></dd>
               <dt class="postres">Postres</dt>  
-                <dd>Cuajada</dd>
-                <dd>Arroz con leche</dd>
-                <dd>Mousse de chocolate</dd>
+                <dd id="tercero1"></dd>
+                <dd id="tercero2"></dd>
+                <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5 order-md-1">
-		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res4foto.jpg" data-holder-rendered="true" >
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"  src="img/restaurantes/res4foto.jpg" data-holder-rendered="true" >
           </div>
         </div>
 		
@@ -233,25 +235,25 @@
             <p>•<strong> Dirección : </strong>Celestino María del Arenal Plaza, 8, 48015 Bilbo, Bizkaia</p>
       			<p>•<strong> Teléfono : </strong>944 47 46 47</p>
 			      <a id="5" class="btn btn-primary boton">Ver ubicacción</a> 
-			      <a onclick="mostrarMenu(5)" class="btn btn-primary">Ver Menu</a>				
-            <div id="menubar5" class="menu">
+			      <a class="btn btn-primary botonMenu">Ver Menu</a>				
+            <div id="restaurante5" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Entrantes</dt>
-                <dd>Pulpo a la gallega</dd>
-                <dd>Croquetas de jamón</dd>
-                <dd>Trigueros a la plancha</dd>
+                <dd id="primero1"></dd>
+                <dd id="primero2"></dd>
+                <dd id="primero3"></dd>
               <dt class="principal">Principal</dt>  
-                <dd>Crema de zanahoria con costrones de pan</dd>
-                <dd>Pulpo a la gallega</dd>
-                <dd>Arroz caldoso de marisco</dd>
+                <dd id="segundo1"></dd>
+                <dd id="segundo2"></dd>
+                <dd id="segundo3"></dd>
               <dt class="postres">Postres</dt>  
-                <dd>Natillas</dd>
-                <dd>Tarta de manzana</dd>
-                <dd>Tarta de arroz</dd>
+                <dd id="tercero1"></dd>
+                <dd id="tercero2"></dd>
+                <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5">
-		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res5foto.jpg" data-holder-rendered="true" >
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"  src="img/restaurantes/res5foto.jpg" data-holder-rendered="true" >
           </div>
         </div>
 		
@@ -262,72 +264,52 @@
 		<div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 id="6" class="nombreSitio featurette-heading">Restaurante Chino Ron City</h2> <br><br>
-            <p>• <strong>Dirección : </strong>Calle Pintores Arrúe, 10, 48015 Bilbao, BI </p>
+            <p>• <strong>Dirección : </strong>Calle Pintores Arrúe, 10, 48015 Bilbao, Bizkaia</p>
       			<p>• <strong>Teléfono : </strong>944 76 26 75 </p>
 			      <a id="6" class="btn btn-primary boton">Ver ubicacción</a> 
-			      <a onclick="mostrarMenu(6)" class="btn btn-primary">Ver Menu</a>				
-            <div id="menubar6" class="menu">
+			      <a class="btn btn-primary botonMenu">Ver Menu</a>				
+            <div id="restaurante6" class="menu">
               <h4>Menu del dia</h4>
               <dt class="entrantes">Entrantes</dt>
-                <dd>Picadillo</dd>
-                <dd>Croquetas de bacalao</dd>
-                <dd>Langostinos a la sartén</dd>
+                <dd id="primero1"></dd>
+                <dd id="primero2"></dd>
+                <dd id="primero3"></dd>
               <dt class="principal">Principal</dt>  
-                <dd>Tallarines con salmón</dd>
-                <dd>Gazpacho andalúz</dd>
-                <dd>Fritura de pescado</dd>
+                <dd id="segundo1"></dd>
+                <dd id="segundo2"></dd>
+                <dd id="segundo3"></dd>
               <dt class="postres">Postres</dt>  
-                <dd>Batido de fresa</dd>
-                <dd>Tarta de queso</dd>
-                <dd>Tarta de chocolate</dd>
+                <dd id="tercero1"></dd>
+                <dd id="tercero2"></dd>
+                <dd id="tercero3"></dd>
             </div>
           </div>
           <div class="col-md-5 order-md-1">
-		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurantes/res6foto.png" data-holder-rendered="true" >
+		              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="img/restaurantes/res6foto.png" data-holder-rendered="true" >
           </div>
         </div>
+        <hr class="featurette-divider"> 
       </div>
     </main>
 
 
 
 <!-- FOOTER -->
-<footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark" style=" margin-bottom:0 !important">
+<footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark " style=" margin-bottom:0 !important">
   <div class="container-fluid">
   <div class="row">
-    <div class="col-12 col-md">
+    <div class="col-6 col-md">
       <img class="mb-2 logo" src="img/logo.png" alt="">
-      <small class="d-block mb-3 text-muted">© 2017-2018</small>
+      <small class="d-block mb-3 text-muted">© 2020-2021</small>
     </div>
-    <div class="col-6 col-md">
-      <h5>Features</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Cool stuff</a></li>
-        <li><a class="text-muted" href="#">Random feature</a></li>
-        <li><a class="text-muted" href="#">Team feature</a></li>
-        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-        <li><a class="text-muted" href="#">Another one</a></li>
-        <li><a class="text-muted" href="#">Last time</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Resources</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Resource</a></li>
-        <li><a class="text-muted" href="#">Resource name</a></li>
-        <li><a class="text-muted" href="#">Another resource</a></li>
-        <li><a class="text-muted" href="#">Final resource</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>About</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Team</a></li>
-        <li><a class="text-muted" href="#">Locations</a></li>
-        <li><a class="text-muted" href="#">Privacy</a></li>
-        <li><a class="text-muted" href="#">Terms</a></li>
-      </ul>
-    </div>
+    <div class="col-6 col-md-6">
+      <ul class="social-network social-circle">
+          <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-youtube"></i></a></li>  
+      </ul>				
+</div>
   <!-- </div> -->
 </div>
 </footer>
